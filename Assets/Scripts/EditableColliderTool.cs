@@ -1,16 +1,18 @@
 using UnityEngine;
 
-public class EditableColliderTool : MonoBehaviour
+namespace Common.Scripts
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [RequireComponent(typeof(MeshCollider))]
+    public sealed class EditableColliderTool : EditableShape
     {
-        
-    }
+        #region Inspector
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        [SerializeField]
+        public float height = 2;
+
+        [SerializeField]
+        public bool reverseTriangles = false;
+
+        #endregion
     }
 }

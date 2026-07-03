@@ -1,16 +1,43 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class EditableShape : MonoBehaviour
+namespace Common.Scripts
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public abstract class EditableShape : MonoBehaviour
     {
-        
-    }
+        #region Inspector
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        [SerializeField]
+        public bool isClosedShape = true;
+
+        #endregion
+
+
+        #region Fields
+
+        [HideInInspector]
+        public List<Vector3> points = new List<Vector3>();
+
+        #endregion
+
+
+        #region Methods
+
+        public void AddPoint (Vector3 position)
+        {
+            points.Add(position);
+        }
+
+        public void InsertPoint (int index, Vector3 position)
+        {
+            points.Insert(index, position);
+        }
+
+        public void RemovePoint (int selected)
+        {
+            points.RemoveAt(selected);
+        }
+
+        #endregion
     }
 }
