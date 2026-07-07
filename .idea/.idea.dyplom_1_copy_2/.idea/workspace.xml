@@ -6,10 +6,38 @@
   <component name="ChangeListManager">
     <list default="true" id="ed3ea656-abf7-4b96-925d-af1464b6665a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.dyplom_1_copy_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dyplom_1_copy_2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/ColliderToolEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/ColliderToolEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/ShapeToolEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/ShapeToolEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditableColliderTool.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EditableColliderTool.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EditableShape.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EditableShape.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02_HubGarden.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02_HubGarden.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Q1_Warmth_Mountain.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Q1_Warmth_Mountain.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Q3_Voice_Forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Q3_Voice_Forest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Q4_Play_Field.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Q4_Play_Field.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/nebo.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/nebo.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/nebo_1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/nebo_1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/nebo_2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/nebo_2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-1 12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-1 12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-10 8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-10 8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-11 8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-11 8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-12 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-12 7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-13 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-13 6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-14 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-14 6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-15 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-15 6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-16 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-16 6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-5 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-5 10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-6 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-6 9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-7 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-7 9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-8 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-8 9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-9 8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q3/Иллюстрация_без_названия-9 8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия 13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия 13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-1 13.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-1 13.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-10 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-10 9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-11 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-11 9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-2 12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-2 12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-4 12.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-4 12.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-5 11.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-5 11.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-6 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-6 10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-7 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-7 10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-8 10.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-8 10.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-9 9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Q4/Иллюстрация_без_названия-9 9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +129,7 @@
       <updated>1782988955899</updated>
       <workItem from="1782988957563" duration="17000" />
       <workItem from="1782989073134" duration="230000" />
-      <workItem from="1782998138875" duration="2265000" />
+      <workItem from="1782998138875" duration="4209000" />
     </task>
     <servers />
   </component>

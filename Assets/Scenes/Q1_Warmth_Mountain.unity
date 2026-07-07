@@ -348,7 +348,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.09, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &624681687 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6916144237057145420, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
@@ -854,7 +854,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5105857576455325902, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_Radius
-      value: 0.0797819
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5105857576455325902, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_Center.x
@@ -862,7 +862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5105857576455325902, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_Center.y
-      value: 0.09
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 5105857576455325902, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_Center.z
@@ -1070,7 +1070,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1034605167792781440, guid: 6962339c4e15244c087e9a1882507df0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.27
+      value: 16.35
       objectReference: {fileID: 0}
     - target: {fileID: 1034605167792781440, guid: 6962339c4e15244c087e9a1882507df0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1115,7 +1115,7 @@ PrefabInstance:
     - target: {fileID: 3928590555594431379, guid: 6962339c4e15244c087e9a1882507df0, type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+      objectReference: {fileID: 0}
     - target: {fileID: 3928590555594431379, guid: 6962339c4e15244c087e9a1882507df0, type: 3}
       propertyPath: m_Enabled
       value: 1
@@ -1151,7 +1151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3232208478793078910, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -11.63
+      value: -4.25
       objectReference: {fileID: 0}
     - target: {fileID: 3232208478793078910, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1680,7 +1680,7 @@ Camera:
   far clip plane: 50
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 10.09
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

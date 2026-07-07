@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7988877737225903732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8522471924044380050}
+  - component: {fileID: 551986233968521713}
+  - component: {fileID: 9024536295447459040}
+  m_Layer: 0
+  m_Name: Boundary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &8522471924044380050
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988877737225903732}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.81496, y: -7.25, z: -0.43}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &551986233968521713
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988877737225903732}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 0}
+--- !u!114 &9024536295447459040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7988877737225903732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363fe191bc9364aea9c85a1ac75a128b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EditableColliderTool
+  isClosedShape: 1
+  points:
+  - {x: -5.057431, y: 4.857095, z: -11.049025}
+  - {x: 7.02501, y: 4.933976, z: -11.049025}
+  - {x: 7.0391054, y: 5.5430326, z: -4.5028486}
+  - {x: -7.4368052, y: 5.8, z: -4.370558}
+  - {x: -14.393324, y: 5.8, z: -3.6758459}
+  - {x: -23.600948, y: 5.8, z: -3.5580852}
+  - {x: -19.21548, y: 5.8, z: -6.2189035}
+  - {x: -28.935585, y: 5.8, z: -6.901534}
+  - {x: -31.474072, y: 5.8, z: -7.0059366}
+  - {x: -31.392426, y: 5.380246, z: -11.049025}
+  height: 3.81
+  reverseTriangles: 1
