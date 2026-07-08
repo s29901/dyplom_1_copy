@@ -41,7 +41,8 @@ public static class CreateIntroDialogue
             asset.lines[i] = new DialogueData.DialogueLine
             {
                 speakerName = raw[i].speaker,
-                text = raw[i].text
+                text = raw[i].text,
+                speakerOnRight = raw[i].speaker == "Bird" // птица справа, герой слева
             };
         }
 

@@ -13,6 +13,16 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;      // основной текст реплики
     public Image portraitImage;        // портрет персонажа справа/слева
 
+    [Header("Позиции слева/справа")]
+    // Пустые RectTransform-метки внутри того же Canvas/панели, куда нужно
+    // "переставлять" nameText и portraitImage в зависимости от говорящего.
+    // Создай 4 пустых UI-объекта (без Image, просто RectTransform) и расставь
+    // их там, где должны быть имя/портрет героя (слева) и птицы (справа).
+    public RectTransform leftNameAnchor;
+    public RectTransform leftPortraitAnchor;
+    public RectTransform rightNameAnchor;
+    public RectTransform rightPortraitAnchor;
+
     [Header("Settings")]
     public float typingSpeed = 0.03f;  // задержка между буквами (эффект печатной машинки)
 
@@ -49,6 +59,20 @@ public class DialogueManager : MonoBehaviour
         {
             portraitImage.sprite = line.speakerPortrait;
             portraitImage.enabled = line.speakerPortrait != null;
+        }
+
+        // Переставляем имя и портрет на нужную сторону в зависимости от говорящего
+        RectTransform nameAnchor = line.speakerOnRight ? rightNameAnchor : leftNameAnchor;
+        RectTransform portraitAnchor = line.speakerOnRight ? rightPortraitAnchor : leftPortraitAnchor;
+
+        if (nameAnchor != null && nameText != null)
+        {
+            nameText.rectTransform.anchoredPosition = nameAnchor.anchoredPosition;
+        }
+
+        if (portraitAnchor != null && portraitImage != null)
+        {
+            portraitImage.rectTransform.anchoredPosition = portraitAnchor.anchoredPosition;
         }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
