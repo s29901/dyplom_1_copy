@@ -13,15 +13,11 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;      // основной текст реплики
     public Image portraitImage;        // портрет персонажа справа/слева
 
-    [Header("Позиции слева/справа")]
-    // Пустые RectTransform-метки внутри того же Canvas/панели, куда нужно
-    // "переставлять" nameText и portraitImage в зависимости от говорящего.
-    // Создай 4 пустых UI-объекта (без Image, просто RectTransform) и расставь
-    // их там, где должны быть имя/портрет героя (слева) и птицы (справа).
-    public RectTransform leftNameAnchor;
-    public RectTransform leftPortraitAnchor;
-    public RectTransform rightNameAnchor;
-    public RectTransform rightPortraitAnchor;
+    [Header("Позиции (anchoredPosition)")]
+    public Vector2 namePosLeft = new Vector2(-955f, 1749f);      // имя героя
+    public Vector2 namePosRight = new Vector2(1530f, 1616f);     // имя птицы
+    public Vector2 portraitPosLeft = new Vector2(-1136f, 1788f); // портрет героя
+    public Vector2 portraitPosRight = new Vector2(2062f, 3178f); // портрет птицы
 
     [Header("Settings")]
     public float typingSpeed = 0.03f;  // задержка между буквами (эффект печатной машинки)
@@ -61,19 +57,11 @@ public class DialogueManager : MonoBehaviour
             portraitImage.enabled = line.speakerPortrait != null;
         }
 
-        // Переставляем имя и портрет на нужную сторону в зависимости от говорящего
-        RectTransform nameAnchor = line.speakerOnRight ? rightNameAnchor : leftNameAnchor;
-        RectTransform portraitAnchor = line.speakerOnRight ? rightPortraitAnchor : leftPortraitAnchor;
+        Vector2 namePos = line.speakerOnRight ? namePosRight : namePosLeft;
+        Vector2 portraitPos = line.speakerOnRight ? portraitPosRight : portraitPosLeft;
 
-        if (nameAnchor != null && nameText != null)
-        {
-            nameText.rectTransform.anchoredPosition = nameAnchor.anchoredPosition;
-        }
-
-        if (portraitAnchor != null && portraitImage != null)
-        {
-            portraitImage.rectTransform.anchoredPosition = portraitAnchor.anchoredPosition;
-        }
+        if (nameText != null) nameText.rectTransform.anchoredPosition = namePos;
+        if (portraitImage != null) portraitImage.rectTransform.anchoredPosition = portraitPos;
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
         typingCoroutine = StartCoroutine(TypeText(line.text));

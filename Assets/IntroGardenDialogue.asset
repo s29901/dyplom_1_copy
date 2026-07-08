@@ -14,79 +14,83 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: Oh... you're finally here. I've been waiting for you.
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: Where am I...? What is this place?
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: This is your inner garden.
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: It's... so empty. And everything's in ruins.
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: We'll have to explore the garden, uncover what happened in each part of
+      it, and slowly help it heal.
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: It wasn't always like this. The grown-ups who were meant to care for this
       place when you were little couldn't give it the care it needed.
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: Is that why it looks like this?
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: Yes. Some plants withered away. Cracks spread through the ground. And some
       things never got the chance to grow at all.
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: That's... really sad.
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: It is. But there's something you should know.
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: What?
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: You're not a child anymore. Now you're the one who can bring this garden
       back to life.
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: Do you really think I can?
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
-    text: I know you can. It won't happen overnight, though. We'll have to explore
-      the garden, uncover what happened in each part of it, and slowly help it heal.
+    text: 'I know you can. It won''t happen overnight, though. '
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: See that little tree? That's your inner tree. It's small now, but every
       challenge you overcome will help it grow stronger.
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: So if I help the garden...
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: ...the tree will grow too. And so will you.
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: Then... let's do it.
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: I'll be with you every step of the way. Come on.
