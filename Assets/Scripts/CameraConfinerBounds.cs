@@ -1,17 +1,22 @@
 using UnityEngine;
 
 // Строит BoxCollider — зону, в которой разрешено находиться камере,
-// по границам спрайта фона (та же математика, что была в CameraFollow).
+// чтобы в кадр не попадало ничего за пределами спрайта фона (fon).
+// Работает с наклонной камерой (например 45°) и наклонным фоном.
+//
 // Использование: пустой объект в (0,0,0) + BoxCollider (Is Trigger) + этот скрипт.
-// Назначь background и cam, затем правый клик по компоненту → Rebuild Bounds.
-// Этот BoxCollider подаётся в CinemachineConfiner3D → Bounding Volume.
+// Назначь background (fon) и cameraTransform (CinemachineCamera),
+// укажи orthoSize (= Lens -> Orthographic Size), затем
+// правый клик по компоненту → Rebuild Bounds.
+// Полученный BoxCollider подаётся в CinemachineConfiner3D → Bounding Volume.
 [RequireComponent(typeof(BoxCollider))]
 public class CameraConfinerBounds : MonoBehaviour
 {
-    public SpriteRenderer background;  // спрайт фона (границы видимости)
-    public Camera cam;                 // Main Camera (наклон, ortho size, aspect)
-    public float extraMinZ = 30f;      // тот же запас, что был в CameraFollow
-    public float boxHeight = 20f;      // толщина зоны по Y (просто с запасом вокруг камеры)
+    public SpriteRenderer background;    // спрайт фона (fon)
+    public Transform cameraTransform;    // CinemachineCamera (наклон и высота берутся отсюда)
+    public float orthoSize = 5f;         // Lens -> Orthographic Size камеры
+    public float aspect = 16f / 9f;      // соотношение сторон экрана
+    public float boxHeight = 20f;        // толщина зоны по Y (с запасом вокруг камеры)
 
     private void Start()
     {
@@ -21,39 +26,58 @@ public class CameraConfinerBounds : MonoBehaviour
     [ContextMenu("Rebuild Bounds")]
     public void Rebuild()
     {
-        if (background == null || cam == null)
+        if (background == null || cameraTransform == null)
         {
-            Debug.LogWarning("CameraConfinerBounds: назначь background и cam");
+            Debug.LogWarning("CameraConfinerBounds: назначь background и cameraTransform");
             return;
         }
 
+        Vector3 right = cameraTransform.right; // горизонталь экрана
+        Vector3 up = cameraTransform.up;       // вертикаль экрана
+
+        // Проекция всех 8 углов bounds фона на оси экрана камеры
         Bounds b = background.bounds;
-        Vector3 fwd = cam.transform.forward;
+        float uMin = float.MaxValue, uMax = float.MinValue;
+        float vMin = float.MaxValue, vMax = float.MinValue;
+        for (int i = 0; i < 8; i++)
+        {
+            Vector3 c = new Vector3(
+                (i & 1) == 0 ? b.min.x : b.max.x,
+                (i & 2) == 0 ? b.min.y : b.max.y,
+                (i & 4) == 0 ? b.min.z : b.max.z);
+            float u = Vector3.Dot(c, right);
+            float v = Vector3.Dot(c, up);
+            uMin = Mathf.Min(uMin, u); uMax = Mathf.Max(uMax, u);
+            vMin = Mathf.Min(vMin, v); vMax = Mathf.Max(vMax, v);
+        }
 
-        float orthH = cam.orthographicSize;
-        float halfW = orthH * cam.aspect;
-        float minX = b.min.x + halfW + orthH * 0.5f;
-        float maxX = b.max.x - halfW - orthH * 0.5f;
+        float halfW = orthoSize * aspect;
+        float halfH = orthoSize;
 
-        float bgZ = background.transform.position.z;
-        float camY = cam.transform.position.y;
-        float cosA = fwd.z;
-        float tanA = -fwd.y / fwd.z;
-        float viewHalfH = orthH / cosA;
+        // Допустимый диапазон центра камеры в экранных осях
+        float uCamMin = uMin + halfW, uCamMax = uMax - halfW;
+        float vCamMin = vMin + halfH, vCamMax = vMax - halfH;
 
-        float camZTop = bgZ + (b.max.y - camY - viewHalfH) / tanA;
-        float camZBottom = bgZ + (b.min.y - camY + viewHalfH) / tanA;
-        float minZ = Mathf.Min(camZTop, camZBottom) - extraMinZ;
-        float maxZ = Mathf.Max(camZTop, camZBottom);
+        if (uCamMin > uCamMax || vCamMin > vCamMax)
+        {
+            Debug.LogWarning("CameraConfinerBounds: фон меньше кадра — уменьши Ortho Size");
+            return;
+        }
+
+        // Камера ездит по X/Z на фиксированной высоте Y.
+        // Горизонталь экрана ~ мировой X, вертикаль пересчитываем в Z:
+        // v = camY*up.y + camZ*up.z  =>  camZ = (v - camY*up.y) / up.z
+        float camY = cameraTransform.position.y;
+        float zA = (vCamMin - camY * up.y) / up.z;
+        float zB = (vCamMax - camY * up.y) / up.z;
+        float zMin = Mathf.Min(zA, zB), zMax = Mathf.Max(zA, zB);
 
         var box = GetComponent<BoxCollider>();
         box.isTrigger = true;
-
-        // Переводим мировые границы в локальные координаты этого объекта
-        Vector3 worldCenter = new Vector3((minX + maxX) * 0.5f, camY, (minZ + maxZ) * 0.5f);
+        Vector3 worldCenter = new Vector3((uCamMin + uCamMax) * 0.5f, camY, (zMin + zMax) * 0.5f);
         box.center = transform.InverseTransformPoint(worldCenter);
-        box.size = new Vector3(Mathf.Max(0.01f, maxX - minX), boxHeight, Mathf.Max(0.01f, maxZ - minZ));
+        box.size = new Vector3(uCamMax - uCamMin, boxHeight, Mathf.Max(0.01f, zMax - zMin));
 
-        Debug.Log($"CameraConfinerBounds → X: {minX:F2}..{maxX:F2} | Z: {minZ:F2}..{maxZ:F2}");
+        Debug.Log($"CameraConfinerBounds → X: {uCamMin:F2}..{uCamMax:F2} | Z: {zMin:F2}..{zMax:F2} | Y={camY:F2}");
     }
 }
