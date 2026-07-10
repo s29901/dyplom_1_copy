@@ -7,6 +7,11 @@ public class DialogueManager : MonoBehaviour
 {
     public static DialogueManager Instance { get; private set; }
 
+    // Идёт ли сейчас диалог (для блокировки повторных кликов по NPC и т.п.)
+    public bool IsDialogueActive => dialoguePanel != null && dialoguePanel.activeSelf;
+
+    private int startFrame; // кадр, в котором диалог начался
+
     [Header("UI References")]
     public GameObject dialoguePanel;   // корневой объект окна диалога
     public TMP_Text nameText;          // текст с именем говорящего (плашка "ELDROS")
@@ -42,6 +47,7 @@ public class DialogueManager : MonoBehaviour
     {
         currentDialogue = dialogue;
         currentLineIndex = 0;
+        startFrame = Time.frameCount;
         dialoguePanel.SetActive(true);
         ShowLine();
     }
@@ -112,8 +118,10 @@ public class DialogueManager : MonoBehaviour
 
     private void Update()
     {
-        // Простейший ввод для теста: ЛКМ или пробел продвигает диалог
-        if (dialoguePanel.activeSelf &&
+        // ЛКМ или пробел продвигает диалог.
+        // Кадр старта пропускаем, чтобы клик, запустивший диалог,
+        // не пролистнул сразу первую реплику.
+        if (dialoguePanel.activeSelf && Time.frameCount != startFrame &&
             (Input.GetMouseButtonDown(0) || Input.GetKeyDown(KeyCode.Space)))
         {
             OnAdvancePressed();
