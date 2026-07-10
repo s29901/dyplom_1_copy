@@ -5,7 +5,42 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed3ea656-abf7-4b96-925d-af1464b6665a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.dyplom_1_copy_2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.dyplom_1_copy_2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/tree_proba.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/tree_proba.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/01_Intro.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/01_Intro.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/02_HubGarden.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/02_HubGarden.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Q1_Warmth_Mountain.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Q1_Warmth_Mountain.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Q2_Tears_Valley.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Q2_Tears_Valley.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Q3_Voice_Forest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Q3_Voice_Forest.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Q4_Play_Field.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Q4_Play_Field.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraConfinerBounds.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraConfinerBounds.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlantGrowth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlantGrowth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestManager_Q1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestManager_Q1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SunDrag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SunDrag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-1 5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-1 5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-10 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-10 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-12 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-12 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-2 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-2 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-3 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-3 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-4 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-4 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-5 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-5 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-6 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-6 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-7 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-7 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-8 4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-8 4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-9 3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Иллюстрация_без_названия-9 3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +147,7 @@
       <updated>1782988955899</updated>
       <workItem from="1782988957563" duration="17000" />
       <workItem from="1782989073134" duration="230000" />
-      <workItem from="1782998138875" duration="8292000" />
+      <workItem from="1782998138875" duration="14784000" />
     </task>
     <servers />
   </component>

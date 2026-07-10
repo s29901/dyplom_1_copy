@@ -1107,7 +1107,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2483289036045770085, guid: 71b4ad8aca24c422e8dd817aa164e4cc, type: 3}
       propertyPath: m_Name
-      value: tree_proba
+      value: tree
       objectReference: {fileID: 0}
     - target: {fileID: 3461247068330523052, guid: 71b4ad8aca24c422e8dd817aa164e4cc, type: 3}
       propertyPath: m_LocalScale.x

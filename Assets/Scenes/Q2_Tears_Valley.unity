@@ -662,7 +662,7 @@ GameObject:
   - component: {fileID: 764206126}
   - component: {fileID: 764206125}
   m_Layer: 0
-  m_Name: plant_proba_2
+  m_Name: tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

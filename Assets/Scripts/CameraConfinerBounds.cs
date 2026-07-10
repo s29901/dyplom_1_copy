@@ -13,6 +13,7 @@ using UnityEngine;
 public class CameraConfinerBounds : MonoBehaviour
 {
     public SpriteRenderer background;    // спрайт фона (fon)
+    public SpriteRenderer[] extraBackgrounds; // дополнительные куски фона, если фон составной
     public Transform cameraTransform;    // CinemachineCamera (наклон и высота берутся отсюда)
     public float orthoSize = 5f;         // Lens -> Orthographic Size камеры
     public float aspect = 16f / 9f;      // соотношение сторон экрана
@@ -35,8 +36,17 @@ public class CameraConfinerBounds : MonoBehaviour
         Vector3 right = cameraTransform.right; // горизонталь экрана
         Vector3 up = cameraTransform.up;       // вертикаль экрана
 
-        // Проекция всех 8 углов bounds фона на оси экрана камеры
+        // Общие границы: основной фон + дополнительные куски
         Bounds b = background.bounds;
+        if (extraBackgrounds != null)
+        {
+            foreach (var sr in extraBackgrounds)
+            {
+                if (sr != null) b.Encapsulate(sr.bounds);
+            }
+        }
+
+        // Проекция всех 8 углов bounds фона на оси экрана камеры
         float uMin = float.MaxValue, uMax = float.MinValue;
         float vMin = float.MaxValue, vMax = float.MinValue;
         for (int i = 0; i < 8; i++)

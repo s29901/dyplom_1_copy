@@ -2834,7 +2834,7 @@ GameObject:
   - component: {fileID: 828068409}
   - component: {fileID: 828068408}
   m_Layer: 0
-  m_Name: Plant_Q3
+  m_Name: tree
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
