@@ -3,6 +3,7 @@ using UnityEngine;
 public class HeroMovement : MonoBehaviour
 {
     [SerializeField] private float speed = 5f;
+    [SerializeField] private float sprintMultiplier = 2f; // ускорение при зажатом Shift
 
     private SpriteRenderer spriteRenderer;
     private Camera cam;
@@ -27,7 +28,12 @@ public class HeroMovement : MonoBehaviour
 
         Vector3 direction = (camRight * h + camForward * v).normalized;
 
-        cc.Move(direction * speed * Time.deltaTime);
+        // Спринт: зажатый Shift ускоряет героя
+        float currentSpeed = speed;
+        if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            currentSpeed *= sprintMultiplier;
+
+        cc.Move(direction * currentSpeed * Time.deltaTime);
 
         spriteRenderer.sortingOrder = Mathf.RoundToInt(-transform.position.z * 10) + 100;
     }

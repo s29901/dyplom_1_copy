@@ -6,8 +6,9 @@ public class CloudDrag : MonoBehaviour
     [SerializeField] private float patrolSpeed = 1f;    // prędkość patrolu
     [SerializeField] private float patrolRange = 2f;    // szerokość kołysania
     [SerializeField] private float rainDuration = 3f;   // sekund przebywania nad drzewem
-    [SerializeField] private Transform tree;             // drzewo
-    [SerializeField] private float treeRadius = 2f;     // strefa nad drzewem
+    [SerializeField] private Transform tree;             // дерево (запасной вариант с радиусом)
+    [SerializeField] private float treeRadius = 2f;     // радиус, если зона не задана
+    [SerializeField] private WarmthZone rainZone;        // настраиваемый бокс: дождь работает внутри него
     [SerializeField] private GameObject rainObject;      // obiekt potomny z animacją deszczu
 
     private Vector3 startPosition;
@@ -62,13 +63,28 @@ public class CloudDrag : MonoBehaviour
         if (dragPlane.Raycast(ray, out dist))
             transform.position = ray.GetPoint(dist);
 
-        // Nad drzewem?
-        float distToTree = Vector2.Distance(
-            new Vector2(transform.position.x, transform.position.z),
-            new Vector2(tree.position.x, tree.position.z)
-        );
+        // Облако в зоне дождя?
+        bool inRainZone;
+        if (rainZone != null)
+        {
+            // Основной вариант: настраиваемый бокс
+            inRainZone = rainZone.Contains(transform.position);
+        }
+        else if (tree != null)
+        {
+            // Запасной вариант: радиус вокруг дерева
+            float distToTree = Vector2.Distance(
+                new Vector2(transform.position.x, transform.position.z),
+                new Vector2(tree.position.x, tree.position.z)
+            );
+            inRainZone = distToTree < treeRadius;
+        }
+        else
+        {
+            inRainZone = false;
+        }
 
-        if (distToTree < treeRadius)
+        if (inRainZone)
         {
             // Deszcz pada
             if (rainObject != null) rainObject.SetActive(true);
@@ -122,6 +138,15 @@ public class CloudDrag : MonoBehaviour
             yield return null;
         }
         gameObject.SetActive(false);
+    }
+
+    // Рисует зону дождя в Scene, когда облако выделено
+    // (если задан бокс rainZone, он и так всегда подсвечен жёлтым)
+    private void OnDrawGizmosSelected()
+    {
+        if (rainZone != null || tree == null) return;
+        Gizmos.color = new Color(0.3f, 0.7f, 1f, 0.9f);
+        Gizmos.DrawWireSphere(tree.position, treeRadius);
     }
 
     IEnumerator ReturnToStart()

@@ -3,9 +3,10 @@ using System.Collections;
 
 public class QuestManager_Q2 : MonoBehaviour
 {
-    [SerializeField] private CloudDrag[] clouds;       // wszystkie 5 chmur
+    [SerializeField] private CloudDrag[] clouds;       // все 5 облаков
     [SerializeField] private HeroMovement heroMovement;
-    [SerializeField] private GameObject completionText;
+    [SerializeField] private GameObject completionText;      // запасной текст (не нужен, если задан диалог)
+    [SerializeField] private DialogueData completionDialogue; // диалог после выполнения квеста
     [SerializeField] private Transform plant;
 
     private int cloudsCompleted = 0;
@@ -66,9 +67,35 @@ public class QuestManager_Q2 : MonoBehaviour
         if (ProgressManager.Instance != null)
             ProgressManager.Instance.SetQuestDone(2);
 
-        completionText.SetActive(true);
-        yield return new WaitForSeconds(2.5f);
-        completionText.SetActive(false);
+        // Ждём магию превращения дерева (искры + смена спрайта), если оно есть в сцене
+        PlantGrowth plantGrowth = FindFirstObjectByType<PlantGrowth>();
+        if (plantGrowth != null)
+        {
+            float waited = 0f;
+            while (!plantGrowth.IsTransitioning && waited < 1f)
+            {
+                waited += Time.deltaTime;
+                yield return null;
+            }
+            while (plantGrowth.IsTransitioning)
+                yield return null;
+
+            yield return new WaitForSeconds(0.8f);
+        }
+
+        if (completionDialogue != null && DialogueManager.Instance != null)
+        {
+            // Финальный диалог запускается сам
+            DialogueManager.Instance.StartDialogue(completionDialogue);
+            while (DialogueManager.Instance.IsDialogueActive)
+                yield return null;
+        }
+        else if (completionText != null)
+        {
+            completionText.SetActive(true);
+            yield return new WaitForSeconds(2.5f);
+            completionText.SetActive(false);
+        }
 
         if (heroMovement != null) heroMovement.enabled = true;
     }
