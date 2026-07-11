@@ -19,6 +19,9 @@ public class PlantGrowth : MonoBehaviour
     private int lastStage = -1;
     private bool transitioning;
 
+    // Идёт ли сейчас магическое превращение (для квестов, ждущих его конца)
+    public bool IsTransitioning => transitioning;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();

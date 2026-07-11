@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 // Повесить на объект NPC вместе с Collider2D или Collider.
@@ -14,28 +13,43 @@ public class BirdInteraction : MonoBehaviour
     public DialogueData repeatDialogue;  // повторная короткая фраза
     public string dialogueId = "hub_bird_intro"; // уникальный ключ этого NPC
 
+    [Header("Блокировка героя до разговора")]
+    public HeroMovement heroMovement; // герой не сможет ходить, пока не поговорит с птицей
+
     [Header("Кнопка 'Поговорить'")]
     public GameObject talkPrompt;   // объект-подсказка (дочерний объект птицы)
     public bool showAfterIntro = false; // показывать ли подсказку после интро (при подходе)
     public Transform hero;          // герой, для расстояния
     public float promptRadius = 4f; // на каком расстоянии показывать после интро
 
-    // static — переживает перезагрузку сцены, сбрасывается при выходе из игры
-    private static readonly HashSet<string> played = new HashSet<string>();
+    // Хранится в PlayerPrefs — интро показывается один раз за всю игру,
+    // даже между запусками. Сброс: Tools -> Reset Story Progress.
+    public static bool WasPlayed(string id) => PlayerPrefs.GetInt("dlg_" + id, 0) == 1;
+
+    public static void MarkPlayed(string id)
+    {
+        PlayerPrefs.SetInt("dlg_" + id, 1);
+        PlayerPrefs.Save();
+    }
 
     private void Update()
     {
-        if (talkPrompt == null) return;
-
         bool dialogueActive = DialogueManager.Instance != null &&
                               DialogueManager.Instance.IsDialogueActive;
+
+        // Герой стоит на месте, пока не поговорил с птицей,
+        // а также во время любого диалога
+        if (heroMovement != null)
+            heroMovement.enabled = WasPlayed(dialogueId) && !dialogueActive;
+
+        if (talkPrompt == null) return;
 
         bool show;
         if (dialogueActive)
         {
             show = false; // во время диалога подсказку прячем
         }
-        else if (!played.Contains(dialogueId))
+        else if (!WasPlayed(dialogueId))
         {
             show = true; // интро ещё не было — приглашаем поговорить
         }
@@ -71,9 +85,9 @@ public class BirdInteraction : MonoBehaviour
         // Идущий диалог прерывать нельзя
         if (DialogueManager.Instance.IsDialogueActive) return;
 
-        if (!played.Contains(dialogueId))
+        if (!WasPlayed(dialogueId))
         {
-            played.Add(dialogueId);
+            MarkPlayed(dialogueId);
             DialogueManager.Instance.StartDialogue(dialogue);
         }
         else if (repeatDialogue != null)

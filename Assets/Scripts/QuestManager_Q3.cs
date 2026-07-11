@@ -35,7 +35,7 @@ public class QuestManager_Q3 : MonoBehaviour
         yield return new WaitForSeconds(1f);
 
         if (ProgressManager.Instance != null)
-            ProgressManager.Instance.quest3Done = true;
+            ProgressManager.Instance.SetQuestDone(3);
 
         if (plant != null)
             plant.UpdatePlant();

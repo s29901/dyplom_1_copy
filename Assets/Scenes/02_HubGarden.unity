@@ -177,7 +177,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6916144237057145420, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.15
+      value: 19.97
       objectReference: {fileID: 0}
     - target: {fileID: 6916144237057145420, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -185,7 +185,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6916144237057145420, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 22.2
+      value: 22.9
       objectReference: {fileID: 0}
     - target: {fileID: 6916144237057145420, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -233,6 +233,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4775752640943333786, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1011504394}
+    - targetCorrespondingSourceObject: {fileID: 4775752640943333786, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1011504398}
   m_SourcePrefab: {fileID: 100100000, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
 --- !u!1 &32693103
 GameObject:
@@ -406,8 +409,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
+  m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -486,9 +489,9 @@ GameObject:
   m_Component:
   - component: {fileID: 282037964}
   - component: {fileID: 282037963}
-  - component: {fileID: 282037962}
   - component: {fileID: 282037960}
   - component: {fileID: 282037965}
+  - component: {fileID: 282037966}
   m_Layer: 0
   m_Name: Bird
   m_TagString: Untagged
@@ -510,137 +513,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
   dialogue: {fileID: 0}
   interactKey: 101
---- !u!60 &282037962
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 282037959}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0.28, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 14.48, y: 10.86}
-    newSize: {x: 14.48, y: 10.86}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -3.22, y: -4.35}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-      - {x: -3.01, y: -4.3199997}
-    - - {x: -5.5036564, y: -8.16737}
-      - {x: -4.4027915, y: -7.8283625}
-      - {x: -0.8924093, y: -5.121009}
-      - {x: -2.8966203, y: -3.7091882}
-      - {x: -0.95052683, y: -4.123687}
-      - {x: -1.654726, y: 1.8816421}
-      - {x: -2.345752, y: 8.648569}
-      - {x: -2.3757026, y: 10.5303955}
-      - {x: -1.4847698, y: 7.8997626}
-      - {x: -0.1802549, y: 3.0062547}
-      - {x: 0.16646296, y: 0.9036666}
-      - {x: 0.21620351, y: -1.9195949}
-      - {x: 0.6432228, y: -2.9457262}
-      - {x: 1.4406284, y: -2.9732232}
-      - {x: 2.25701, y: -2.42433}
-      - {x: 2.9125655, y: -1.3642317}
-      - {x: 3.1608558, y: -0.6300921}
-      - {x: 4.213897, y: -0.2672228}
-      - {x: 3.7456334, y: -1.0949858}
-      - {x: 3.4021041, y: -1.9817646}
-      - {x: 3.125508, y: -3.6385818}
-      - {x: 2.052073, y: -5.075862}
-      - {x: 3.1828728, y: -6.6029887}
-      - {x: 4.9222093, y: -7.917399}
-      - {x: 5.235066, y: -8.419142}
-      - {x: 4.393291, y: -8.248146}
-      - {x: 2.417031, y: -7.7455335}
-      - {x: 0.77838683, y: -6.427915}
-      - {x: 0.051372528, y: -6.7135253}
-      - {x: -0.55923676, y: -6.435535}
-      - {x: -1.4757332, y: -7.433797}
-      - {x: -2.7789316, y: -8.583371}
-      - {x: -5.1433167, y: -9.284116}
-      - {x: -6.3865147, y: -9.023394}
-  m_UseDelaunayMesh: 1
 --- !u!212 &282037963
 SpriteRenderer:
   serializedVersion: 2
@@ -690,7 +562,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 90171f867c5c04d718513b8ce9902adf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -709,7 +581,7 @@ Transform:
   m_GameObject: {fileID: 282037959}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 22.8, y: 3.74, z: 20.95}
+  m_LocalPosition: {x: 23, y: 0, z: 16.3}
   m_LocalScale: {x: 0.37, y: 0.37, z: 0.37}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -731,10 +603,90 @@ MonoBehaviour:
   dialogue: {fileID: 11400000, guid: 98203723872ff4852b90bc4ae4631c8f, type: 2}
   repeatDialogue: {fileID: 11400000, guid: fe7baf9f47ec4884969de8489709ff46, type: 2}
   dialogueId: hub_bird_intro
+  heroMovement: {fileID: 1011504397}
   talkPrompt: {fileID: 1859185051}
   showAfterIntro: 0
   hero: {fileID: 817534167}
   promptRadius: 4
+--- !u!60 &282037966
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282037959}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 10.86, y: 14.48}
+    newSize: {x: 14.48, y: 10.86}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.12841706, y: 2.3225093}
+      - {x: 0.78153247, y: 4.857903}
+      - {x: 1.6522474, y: 8.02452}
+      - {x: 1.5311978, y: 5.752542}
+      - {x: 1.2406157, y: 3.1564987}
+      - {x: 2.7190533, y: 8.124584}
+      - {x: 2.9363828, y: 11.986531}
+      - {x: 3.5149999, y: 11.140736}
+      - {x: 3.1520936, y: 13.43065}
+      - {x: 3.1461291, y: 17.041578}
+      - {x: 2.4221716, y: 20.06711}
+      - {x: 1.537389, y: 21.342484}
+      - {x: 0.9500339, y: 23.07593}
+      - {x: 0.39496452, y: 23.422129}
+      - {x: -0.27224562, y: 24.223928}
+      - {x: 0.18549125, y: 21.493093}
+      - {x: -0.24006912, y: 20.078108}
+      - {x: -0.17582762, y: 17.747314}
+      - {x: 0.9691899, y: 14.007898}
+      - {x: 1.4815551, y: 13.0833435}
+      - {x: 1.3308448, y: 11.2890415}
+      - {x: 0.45313966, y: 7.92117}
+      - {x: -0.24154863, y: 5.960518}
+      - {x: -1.2442468, y: 3.7131927}
+      - {x: -1.6731726, y: 1.9388988}
+      - {x: -1.4936095, y: 1.854173}
+      - {x: -0.64368474, y: 4.2315006}
+      - {x: -0.105147354, y: 5.3862624}
+      - {x: 0.6093557, y: 7.116674}
+      - {x: 1.1032404, y: 7.5020156}
+      - {x: -0.6977761, y: 0.7335552}
+      - {x: -0.5313357, y: 0.6361779}
+  m_UseDelaunayMesh: 1
 --- !u!1 &351363871
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,8 +746,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Are you ready to move on?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
+  m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1115,6 +1067,7 @@ GameObject:
   - component: {fileID: 452840593}
   - component: {fileID: 452840592}
   - component: {fileID: 452840591}
+  - component: {fileID: 452840594}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -1130,7 +1083,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452840589}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalPosition: {x: 0, y: 0, z: 8.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1139,7 +1092,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1238.2, y: -550}
+  m_AnchoredPosition: {x: -1274.8, y: -380}
   m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &452840591
@@ -1236,6 +1189,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 452840589}
   m_CullTransparentMesh: 1
+--- !u!114 &452840594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452840589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab3bd7b17c3854e56b39bdef517760fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIPulse
+  speed: 2.5
+  amount: 0.06
 --- !u!1 &532919810
 GameObject:
   m_ObjectHideFlags: 0
@@ -1295,8 +1262,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: yes
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
+  m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1571,8 +1538,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: question
+      value: Are you ready to move on?
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: sceneName
       value: Q2_Tears_Valley
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: lockedMessage
+      value: you should come back later...
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: requiredQuest
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3232208478793078910, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: m_LocalScale.x
@@ -1748,6 +1727,29 @@ CharacterController:
   m_SkinWidth: 0.01
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1011504397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 931539409851256931, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
+  m_PrefabInstance: {fileID: 23049382}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011504393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8c68d1330b4714beb8844411eaaae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeroMovement
+--- !u!114 &1011504398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011504393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de3ef13d496d546f2bf436fd05c4b014, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeroSpawn
 --- !u!1 &1025411743
 GameObject:
   m_ObjectHideFlags: 0
@@ -1879,8 +1881,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
+  m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2113,7 +2115,7 @@ Transform:
   m_GameObject: {fileID: 1184888480}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 20.21, y: 61.8, z: -34}
+  m_LocalPosition: {x: 20.029999, y: 61.8, z: -33.300003}
   m_LocalScale: {x: 1, y: 1, z: 1.0177}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2249,8 +2251,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: question
+      value: Are you ready to move on?
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: sceneName
       value: Q4_Play_Field
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: lockedMessage
+      value: you should come back later...
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: requiredQuest
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3232208478793078910, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: m_LocalScale.x
@@ -2794,8 +2808,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: no
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
+  m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2931,8 +2945,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
+  m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3098,7 +3112,7 @@ Transform:
   m_GameObject: {fileID: 1649968549}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 20.21, y: 58.564644, z: -34}
+  m_LocalPosition: {x: 20.029999, y: 58.564644, z: -33.300003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3504,8 +3518,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: BIRD
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
+  m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4070,6 +4084,8 @@ MonoBehaviour:
   namePosRight: {x: 1530, y: 1616}
   portraitPosLeft: {x: -1300, y: 1788}
   portraitPosRight: {x: 2000, y: 3178}
+  portraitSizeLeft: {x: 0, y: 0}
+  portraitSizeRight: {x: 0, y: 0}
   typingSpeed: 0.03
 --- !u!4 &2077147328
 Transform:
@@ -4249,8 +4265,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: question
+      value: Are you ready to move on?
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: sceneName
       value: Q3_Voice_Forest
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: lockedMessage
+      value: you should come back later...
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: requiredQuest
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3232208478793078910, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: m_LocalScale.x
@@ -4387,8 +4415,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: question
+      value: Are you ready to move on?
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: sceneName
       value: Q1_Warmth_Mountain
+      objectReference: {fileID: 0}
+    - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
+      propertyPath: lockedMessage
+      value: you should come back later...
       objectReference: {fileID: 0}
     - target: {fileID: 3232208478793078910, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: m_LocalScale.x

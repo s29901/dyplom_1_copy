@@ -35,6 +35,18 @@ public class PortalPrompt : MonoBehaviour
     {
         targetScene = sceneName;
         questionText.text = question;
+        yesButton.gameObject.SetActive(true);
+        noButton.gameObject.SetActive(true);
+        panel.SetActive(true);
+    }
+
+    // Сообщение без кнопок — для закрытых порталов
+    public void ShowLocked(string message)
+    {
+        targetScene = null;
+        questionText.text = message;
+        yesButton.gameObject.SetActive(false);
+        noButton.gameObject.SetActive(false);
         panel.SetActive(true);
     }
 

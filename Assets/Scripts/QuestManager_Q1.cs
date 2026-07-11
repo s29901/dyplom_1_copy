@@ -7,7 +7,8 @@ public class QuestManager_Q1 : MonoBehaviour
     [SerializeField] private Transform sun;
     [SerializeField] private WarmthBar warmthBar;
     [SerializeField] private HeroMovement heroMovement;   // bohater
-    [SerializeField] private GameObject completionText;   // tekst "Pęd poczuł ciepło"
+    [SerializeField] private GameObject completionText;   // текст-заглушка (не нужен, если задан диалог)
+    [SerializeField] private DialogueData completionDialogue; // диалог после выполнения квеста
 
     [Header("Зона срабатывания (объект с WarmthZone)")]
     [SerializeField] private WarmthZone warmthZone;
@@ -16,6 +17,17 @@ public class QuestManager_Q1 : MonoBehaviour
 
     private float warmth = 0f;
     private bool questDone = false;
+
+    void Start()
+    {
+        // Квест уже пройден ранее — не запускаем его заново и прячем шкалу
+        if (ProgressManager.Instance != null && ProgressManager.Instance.quest1Done)
+        {
+            questDone = true;
+            if (warmthBar != null)
+                warmthBar.gameObject.SetActive(false);
+        }
+    }
 
     void Update()
     {
@@ -37,7 +49,11 @@ public class QuestManager_Q1 : MonoBehaviour
         questDone = true;
 
         if (ProgressManager.Instance != null)
-            ProgressManager.Instance.quest1Done = true;
+            ProgressManager.Instance.SetQuestDone(1);
+
+        // Прячем шкалу тепла — она больше не нужна
+        if (warmthBar != null)
+            warmthBar.gameObject.SetActive(false);
 
         StartCoroutine(CompletionAnimation());
     }
@@ -47,18 +63,45 @@ public class QuestManager_Q1 : MonoBehaviour
         // Останавливаем героя
         heroMovement.enabled = false;
 
-        // Дерево само переключится на следующую стадию (PlantGrowth),
-        // даём секунду полюбоваться
-        yield return new WaitForSeconds(1f);
+        // Ждём магию превращения дерева: искры, растворение, новый спрайт
+        PlantGrowth plantGrowth = FindFirstObjectByType<PlantGrowth>();
+        if (plantGrowth != null)
+        {
+            // даём превращению начаться (на случай задержки — ждём максимум 1 сек)
+            float waited = 0f;
+            while (!plantGrowth.IsTransitioning && waited < 1f)
+            {
+                waited += Time.deltaTime;
+                yield return null;
+            }
 
-        // Показываем текст
-        completionText.SetActive(true);
+            // ждём конца превращения
+            while (plantGrowth.IsTransitioning)
+                yield return null;
 
-        // Czekamy 2 sekundy
-        yield return new WaitForSeconds(2f);
+            // короткая пауза, чтобы разглядеть новое дерево
+            yield return new WaitForSeconds(0.8f);
+        }
+        else
+        {
+            yield return new WaitForSeconds(1f);
+        }
 
-        // Chowamy tekst, oddajemy kontrolę
-        completionText.SetActive(false);
+        if (completionDialogue != null && DialogueManager.Instance != null)
+        {
+            // Финальный диалог запускается сам
+            DialogueManager.Instance.StartDialogue(completionDialogue);
+            while (DialogueManager.Instance.IsDialogueActive)
+                yield return null;
+        }
+        else if (completionText != null)
+        {
+            // Запасной вариант: просто текст
+            completionText.SetActive(true);
+            yield return new WaitForSeconds(2f);
+            completionText.SetActive(false);
+        }
+
         heroMovement.enabled = true;
     }
 }

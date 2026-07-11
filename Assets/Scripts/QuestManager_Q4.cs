@@ -34,7 +34,7 @@ public class QuestManager_Q4 : MonoBehaviour
     System.Collections.IEnumerator CompleteQuest()
     {
         if (ProgressManager.Instance != null)
-            ProgressManager.Instance.quest4Done = true;
+            ProgressManager.Instance.SetQuestDone(4);
 
         if (completionText != null)
             completionText.SetActive(true);

@@ -64,7 +64,7 @@ public class QuestManager_Q2 : MonoBehaviour
         }
 
         if (ProgressManager.Instance != null)
-            ProgressManager.Instance.quest2Done = true;
+            ProgressManager.Instance.SetQuestDone(2);
 
         completionText.SetActive(true);
         yield return new WaitForSeconds(2.5f);
