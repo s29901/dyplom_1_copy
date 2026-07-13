@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "It worked..."
+    text: "It worked... I didn't think I could do that."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: "See? It didn't need anything extraordinary. Just a little warmth."
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "So... is this how I can bring my garden back to life?"
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: "Not all at once. But this is how it begins. Step by step."

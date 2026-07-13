@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
+  m_Name: EndingDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "Look at your tree."
+  - speakerName: Hero
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
+    speakerOnRight: 0
+    text: "It's so tall now... When did that happen?"
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "While you weren't looking. That's how growing works."
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "Remember when you asked what would happen if you failed? You never needed the answer."
+    requiredChoiceKey: intro_fail
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "You once called it 'just one small tree'. Look at it now."
+    requiredChoiceKey: intro_smalltree
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "And you never said anything wrong to them. You stayed. That was enough."
+    requiredChoiceKey: q3_wrongwords
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "You thought rest was a waste of time. And yet here we are."
+    requiredChoiceKey: q4_waste
+  - speakerName: Hero
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
+    speakerOnRight: 0
+    text: "Will the garden be okay when I leave?"
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "You're not leaving. It's your garden. It's with you everywhere."
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "Some days it will rain here. Some days it will be cold. But now you know what to do."
+  - speakerName: Hero
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
+    speakerOnRight: 0
+    text: "Come back. Bring warmth. Let the rain fall. Speak. Rest."
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "And I'll be here. Every time."

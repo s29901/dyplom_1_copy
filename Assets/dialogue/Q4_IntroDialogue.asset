@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
+  m_Name: Q4_IntroDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: Hero
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
+    speakerOnRight: 0
+    text: "Wait... there's nothing to fix here?"
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "No."
+  - speakerName: Hero
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
+    speakerOnRight: 0
+    text: "Then what do I do?"
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "Nothing. That's the whole quest."
+    choiceA: "I don't know how to do nothing."
+    choiceB: "This feels like a waste of time."
+    choiceKeyA: q4_dontknow
+    choiceKeyB: q4_waste
+    reactionA: "I know. That's why we're here."
+    reactionB: "Rest is never wasted. It's how gardens grow back."
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "Chase a butterfly. Or don't. Nobody's watching. Nobody's grading you."

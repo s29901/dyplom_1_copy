@@ -13,6 +13,10 @@ public class BirdInteraction : MonoBehaviour
     public DialogueData repeatDialogue;  // повторная короткая фраза
     public string dialogueId = "hub_bird_intro"; // уникальный ключ этого NPC
 
+    [Header("Финал (все 4 квеста пройдены)")]
+    public DialogueData finalDialogue;       // прощальные слова птицы (один раз)
+    public DialogueData finalRepeatDialogue; // короткая фраза после финала
+
     [Header("Блокировка героя до разговора")]
     public HeroMovement heroMovement; // герой не сможет ходить, пока не поговорит с птицей
 
@@ -89,10 +93,28 @@ public class BirdInteraction : MonoBehaviour
         {
             MarkPlayed(dialogueId);
             DialogueManager.Instance.StartDialogue(dialogue);
+            return;
         }
-        else if (repeatDialogue != null)
+
+        // Все 4 квеста пройдены — финальные слова птицы
+        bool allDone = ProgressManager.Instance != null &&
+                       ProgressManager.Instance.QuestsCompleted() >= 4;
+        if (allDone && finalDialogue != null)
         {
-            DialogueManager.Instance.StartDialogue(repeatDialogue);
+            if (!WasPlayed(dialogueId + "_final"))
+            {
+                MarkPlayed(dialogueId + "_final");
+                DialogueManager.Instance.StartDialogue(finalDialogue);
+                return;
+            }
+            if (finalRepeatDialogue != null)
+            {
+                DialogueManager.Instance.StartDialogue(finalRepeatDialogue);
+                return;
+            }
         }
+
+        if (repeatDialogue != null)
+            DialogueManager.Instance.StartDialogue(repeatDialogue);
     }
 }

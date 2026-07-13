@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
+  m_Name: A_Fox_Anger
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: Fox
+    speakerPortrait: {fileID: 0}
+    speakerOnRight: 1
+    text: "Go away! ...No. Stay. I don't know! Everything is UNFAIR and nobody cares!"
+    choiceA: "You sound really angry."
+    choiceB: "Calm down, it's not a big deal."
+    choiceKeyA: a_anger_listen
+    choiceKeyB: a_anger_fix
+    reactionA: "I AM angry! And... it feels good that someone finally just sees it. Without flinching."
+    reactionB: "Telling me to calm down has never calmed anyone in the history of ever. Just let me be angry for one minute."
+  - speakerName: Fox
+    speakerPortrait: {fileID: 0}
+    speakerOnRight: 1
+    text: "...The fire got smaller. It does that, when it's allowed to burn for a bit. Thank you for not running away."

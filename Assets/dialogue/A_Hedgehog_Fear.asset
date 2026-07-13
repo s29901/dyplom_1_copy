@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
+  m_Name: A_Hedgehog_Fear
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: Hedgehog
+    speakerPortrait: {fileID: 0}
+    speakerOnRight: 1
+    text: "D-don't come closer! ...No, wait. Don't go. I never know which one I want."
+    choiceA: "It's okay to be scared. I'll stay right here."
+    choiceB: "There's nothing to be afraid of!"
+    choiceKeyA: a_fear_listen
+    choiceKeyB: a_fear_fix
+    reactionA: "You're... not laughing at me? The fear feels smaller when someone stays next to it."
+    reactionB: "But I am afraid. When you say it's nothing, I'm still afraid — just alone with it now."
+  - speakerName: Hedgehog
+    speakerPortrait: {fileID: 0}
+    speakerOnRight: 1
+    text: "I'm still a little scared. But it's not the lonely kind of scared anymore. That's different. That's better."

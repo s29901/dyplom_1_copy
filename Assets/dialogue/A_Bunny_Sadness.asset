@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
+  m_Name: A_Bunny_Sadness
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: Bunny
+    speakerPortrait: {fileID: 0}
+    speakerOnRight: 1
+    text: "Oh... don't look at me. I'm just sad. Today. And yesterday. And the day before that."
+    choiceA: "Do you want to tell me about it?"
+    choiceB: "Don't be sad! Cheer up!"
+    choiceKeyA: a_sad_listen
+    choiceKeyB: a_sad_fix
+    reactionA: "...Yes. I do, actually. Nobody ever asks."
+    reactionB: "'Cheer up' never works. Could you just... sit with me instead? That helps."
+  - speakerName: Bunny
+    speakerPortrait: {fileID: 0}
+    speakerOnRight: 1
+    text: "Thank you for listening. The sadness is still here... but it feels lighter when it's not a secret."

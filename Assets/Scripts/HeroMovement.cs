@@ -8,12 +8,14 @@ public class HeroMovement : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Camera cam;
     private CharacterController cc;
+    private float lockedY; // высота, на которой герой стоит всегда
 
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         cam = Camera.main;
         cc = GetComponent<CharacterController>();
+        lockedY = transform.position.y;
     }
 
     void Update()
@@ -34,6 +36,16 @@ public class HeroMovement : MonoBehaviour
             currentSpeed *= sprintMultiplier;
 
         cc.Move(direction * currentSpeed * Time.deltaTime);
+
+        // Держим высоту: CharacterController без гравитации может «заступить»
+        // на чужой коллайдер (зверёк, стык земли) и остаться наверху
+        if (!Mathf.Approximately(transform.position.y, lockedY))
+        {
+            Vector3 p = transform.position;
+            p.y = lockedY;
+            transform.position = p;
+            Physics.SyncTransforms();
+        }
 
         spriteRenderer.sortingOrder = Mathf.RoundToInt(-transform.position.z * 10) + 100;
     }

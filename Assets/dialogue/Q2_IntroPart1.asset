@@ -14,22 +14,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: "Something feels different here, doesn't it?"
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Everything is gray... The clouds are so heavy."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: "This part of the garden has been waiting for rain."
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Rain?"
+    text: "I don't like rain. Or crying. It never fixed anything."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
-    text: "Not every plant grows in the sun alone."
+    text: "Holding it in didn't fix anything either. Did it?"
+    choiceA: "..."
+    choiceB: "...No. It didn't."
+    choiceKeyA: q2_silent
+    choiceKeyB: q2_admit
+    reactionA: "Not every plant grows in the sun alone."
+    reactionB: "That took courage to say. Not every plant grows in the sun alone."

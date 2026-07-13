@@ -14,26 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "My tree looks so small here."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: "Yes. It has been waiting for warmth for a very long time."
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Can't the sun warm it on its own?"
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: "It can. But someone has to bring it closer first."
-  - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
-    speakerOnRight: 0
-    text: "...Me?"
-  - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
-    speakerOnRight: 1
-    text: "Yes. Some things only begin to grow when we give them our attention."
+    choiceA: "Why me? I can barely keep myself warm."
+    choiceB: "That sounds too simple."
+    choiceKeyA: q1_doubt
+    choiceKeyB: q1_simple
+    reactionA: "That's exactly why. Some things only begin to grow when we give them our attention. You included."
+    reactionB: "The simplest things are the ones we forget to do most often."

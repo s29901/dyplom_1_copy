@@ -5,10 +5,12 @@ using TMPro;
 public class QuestManager_Q3 : MonoBehaviour
 {
     [Header("Настройки")]
-    public int totalBubbles = 4;
+    public int totalBubbles = 5; // сколько зверьков нужно выслушать
 
     [Header("UI")]
-    public GameObject completionText; // запасной текст (не нужен, если задан диалог)
+    public GameObject completionText;  // запасной текст (не нужен, если задан диалог)
+    public TMP_Text counterText;       // счётчик "3 / 5" (объект с именем AnimalCounter)
+    public string counterFormat = "{0} / {1}";
 
     [Header("Диалог после квеста")]
     public DialogueData completionDialogue;
@@ -25,20 +27,42 @@ public class QuestManager_Q3 : MonoBehaviour
     {
         if (completionText != null)
             completionText.SetActive(false);
+
+        // авто-поиск счётчика по имени, если не назначен
+        if (counterText == null)
+        {
+            foreach (var t in FindObjectsByType<TMP_Text>(FindObjectsInactive.Include, FindObjectsSortMode.None))
+                if (t.name.Trim() == "AnimalCounter") { counterText = t; break; }
+        }
+        UpdateCounter();
     }
 
-    public void OnBubbleSaid()
+    // Новый путь: зверёк выслушан
+    public void OnAnimalHeard() => Progress();
+
+    // Старый путь: пузырь озвучен (оставлено для совместимости)
+    public void OnBubbleSaid() => Progress();
+
+    private void Progress()
     {
         saidCount++;
+        UpdateCounter();
         if (saidCount >= totalBubbles)
-        {
             StartCoroutine(CompleteQuest());
-        }
+    }
+
+    private void UpdateCounter()
+    {
+        if (counterText != null)
+            counterText.text = string.Format(counterFormat, saidCount, totalBubbles);
     }
 
     System.Collections.IEnumerator CompleteQuest()
     {
         if (heroMovement != null) heroMovement.enabled = false;
+
+        // счётчик выполнил свою задачу — мягко убираем
+        if (counterText != null) counterText.gameObject.SetActive(false);
 
         yield return new WaitForSeconds(1f);
 
@@ -63,7 +87,6 @@ public class QuestManager_Q3 : MonoBehaviour
 
         if (completionDialogue != null && DialogueManager.Instance != null)
         {
-            // Финальный диалог запускается сам
             DialogueManager.Instance.StartDialogue(completionDialogue);
             while (DialogueManager.Instance.IsDialogueActive)
                 yield return null;

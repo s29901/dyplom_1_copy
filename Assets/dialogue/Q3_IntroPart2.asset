@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
+  m_Name: Q3_IntroPart2
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  lines:
+  - speakerName: Hero
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
+    speakerOnRight: 0
+    text: "What are they waiting for?"
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "For someone to listen. Not to fix them. Not to chase them away. Just to listen."
+  - speakerName: Bird
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerOnRight: 1
+    text: "Will you hear them out?"
+    choiceA: "What if I say something wrong?"
+    choiceB: "I'll try."
+    choiceKeyA: q3_wrongwords
+    choiceKeyB: q3_try
+    reactionA: "You don't need the right words. You only need to stay."
+    reactionB: "That's all they have ever wanted."

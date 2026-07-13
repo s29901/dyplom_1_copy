@@ -14,18 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "It grew..."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: "Yes. Sometimes growing begins the moment we stop holding everything inside."
   - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 0e142f5eb8d6e4de2a96b07cb34a2911, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "So... it's okay to cry?"
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: 8bc7b80290a84470b8ede312550d16b6, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
     text: "Of course. Even the strongest gardens need rain."

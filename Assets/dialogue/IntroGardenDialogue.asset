@@ -16,81 +16,38 @@ MonoBehaviour:
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
-    text: Oh... you're finally here. I've been waiting for you.
+    text: "You're here. I was starting to think you'd never come back."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: Where am I...? What is this place?
+    text: "Back? I've never been here before."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
-    text: This is your inner garden.
+    text: "You have. A long time ago. This is your garden."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: It's... so empty. And everything's in ruins.
+    text: "Mine? But it's all... broken."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
-    text: We'll have to explore the garden, uncover what happened in each part of
-      it, and slowly help it heal.
-  - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
-    speakerOnRight: 1
-    text: It wasn't always like this. The grown-ups who were meant to care for this
-      place when you were little couldn't give it the care it needed.
+    text: "Nobody took care of it when it needed care most. That wasn't your fault. But you're the only one who can bring it back now."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: Is that why it looks like this?
+    text: "I don't know how to fix anything."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
     speakerOnRight: 1
-    text: Yes. Some plants withered away. Cracks spread through the ground. And some
-      things never got the chance to grow at all.
+    text: "Nobody does, at first. See that little tree? It's still alive. That's enough to start."
+    choiceA: "And if I fail?"
+    choiceB: "It's just one small tree."
+    choiceKeyA: intro_fail
+    choiceKeyB: intro_smalltree
+    reactionA: "Then we'll try again. Gardens are patient."
+    reactionB: "Every garden begins with a single tree. Don't underestimate it."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: That's... really sad.
-  - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
-    speakerOnRight: 1
-    text: It is. But there's something you should know.
-  - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
-    speakerOnRight: 0
-    text: What?
-  - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
-    speakerOnRight: 1
-    text: You're not a child anymore. Now you're the one who can bring this garden
-      back to life.
-  - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
-    speakerOnRight: 0
-    text: Do you really think I can?
-  - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
-    speakerOnRight: 1
-    text: 'I know you can. It won''t happen overnight, though. '
-  - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
-    speakerOnRight: 1
-    text: See that little tree? That's your inner tree. It's small now, but every
-      challenge you overcome will help it grow stronger.
-  - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
-    speakerOnRight: 0
-    text: So if I help the garden...
-  - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
-    speakerOnRight: 1
-    text: ...the tree will grow too. And so will you.
-  - speakerName: Hero
-    speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
-    speakerOnRight: 0
-    text: Then... let's do it.
-  - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
-    speakerOnRight: 1
-    text: I'll be with you every step of the way. Come on.
+    text: "...Okay. Show me."
