@@ -104,3 +104,16 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# --- Сборки игры (создаются заново при каждом билде, в репозиторий не нужны) ---
+win_64_build_f/
+win_64_build_f.zip
+wind_build_int_64/
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+*.app/
+*_BurstDebugInformation_DoNotShip/
+
+# --- Служебное ---
+.DS_Store
+.idea/
+*.zip
