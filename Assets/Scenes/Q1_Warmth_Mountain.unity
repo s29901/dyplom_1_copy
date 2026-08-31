@@ -404,7 +404,7 @@ SpriteRenderer:
   m_Size: {x: 40, y: 14.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &157124830
 Transform:
@@ -7620,25 +7620,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5910869059782873992, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: magicParticles
-      value: 
-      objectReference: {fileID: 9013273261355584627}
     - target: {fileID: 7698828750450746790, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
       propertyPath: m_Name
       value: GrowingTree
-      objectReference: {fileID: 0}
-    - target: {fileID: 7707104795539831127, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7707104795539831127, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: m_Color.g
-      value: 0.9843137
-      objectReference: {fileID: 0}
-    - target: {fileID: 7707104795539831127, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9843137
       objectReference: {fileID: 0}
     - target: {fileID: 7948713443373760169, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7685,11 +7669,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
---- !u!198 &9013273261355584627 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2909234119838075483, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-  m_PrefabInstance: {fileID: 9013273261355584626}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

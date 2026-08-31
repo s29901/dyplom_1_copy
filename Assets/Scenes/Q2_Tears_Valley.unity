@@ -194,7 +194,7 @@ SpriteRenderer:
   m_Size: {x: 40, y: 14.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
 --- !u!4 &80263894
 Transform:
@@ -3673,37 +3673,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5910869059782873992, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: magicParticles
-      value: 
-      objectReference: {fileID: 1392257430}
-    - target: {fileID: 5910869059782873992, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: 'growthStages.Array.data[0]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 6f2800e6c548642ebb041c26606d0b25, type: 3}
-    - target: {fileID: 5910869059782873992, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: 'growthStages.Array.data[1]'
-      value: 
-      objectReference: {fileID: 21300000, guid: 3b87d5baa4da640bf87949b793ae6184, type: 3}
     - target: {fileID: 7698828750450746790, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
       propertyPath: m_Name
       value: GrowingTree
-      objectReference: {fileID: 0}
-    - target: {fileID: 7707104795539831127, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 6f2800e6c548642ebb041c26606d0b25, type: 3}
-    - target: {fileID: 7948713443373760169, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7948713443373760169, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.7
-      objectReference: {fileID: 0}
-    - target: {fileID: 7948713443373760169, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 7948713443373760169, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3745,20 +3717,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7948713443373760169, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
---- !u!198 &1392257430 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 2909234119838075483, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-  m_PrefabInstance: {fileID: 1392257429}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1486398400
 GameObject:
   m_ObjectHideFlags: 0

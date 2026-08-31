@@ -4922,8 +4922,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 19.88, y: 0, z: 18.23}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 208369315069361783}
   m_Father: {fileID: 0}
@@ -4977,15 +4977,15 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 1e04ca2cfb44343f6a8f0c56d9d6c531, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f7c4113c57729442dad93b1fddebf548, type: 3}
+  m_Color: {r: 0.9843137, g: 0.9843137, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 20.48, y: 20.48}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 1
 --- !u!114 &5910869059782873992
 MonoBehaviour:
@@ -4999,11 +4999,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f598cfec4fa40dab626127ae93ca23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlantGrowth
+  stages:
+  - frames:
+    - {fileID: 21300000, guid: 1e04ca2cfb44343f6a8f0c56d9d6c531, type: 3}
+    frameDuration: 0.6
+  - frames:
+    - {fileID: 21300000, guid: ef72b782234a44b97994c6ca1ff8cd5c, type: 3}
+    - {fileID: 21300000, guid: 0f1a8d2deeff84127a137d356543da99, type: 3}
+    - {fileID: 21300000, guid: da83702959618454e92443f83581bf2f, type: 3}
+    frameDuration: 0.6
+  - frames:
+    - {fileID: 21300000, guid: 7ad21ed4597f54755887a4cb9a7838e7, type: 3}
+    - {fileID: 21300000, guid: 79083a5952db348cc9486a10a11ec263, type: 3}
+    - {fileID: 21300000, guid: 47ea867fbaf414eafbc4f148343acaf2, type: 3}
+    frameDuration: 0.6
+  - frames:
+    - {fileID: 21300000, guid: 6a9714a7c6362488fba82bcc2537997f, type: 3}
+    - {fileID: 21300000, guid: 2b776513ec96444929ec7145e88d0777, type: 3}
+    - {fileID: 21300000, guid: d2735c0fa965d4b3ea4abc429777e229, type: 3}
+    frameDuration: 0.6
+  - frames:
+    - {fileID: 21300000, guid: 8c26ed418d8e74d3aadbbcab6852d362, type: 3}
+    - {fileID: 21300000, guid: 95e469fb34e424e16811f425db7186d7, type: 3}
+    - {fileID: 21300000, guid: ece87f7f2b7244d0ba8a715220b577aa, type: 3}
+    frameDuration: 0.6
   growthStages:
-  - {fileID: 21300000, guid: 1e04ca2cfb44343f6a8f0c56d9d6c531, type: 3}
-  - {fileID: 21300000, guid: da83702959618454e92443f83581bf2f, type: 3}
+  - {fileID: 21300000, guid: 6f2800e6c548642ebb041c26606d0b25, type: 3}
+  - {fileID: 21300000, guid: 3b87d5baa4da640bf87949b793ae6184, type: 3}
   - {fileID: 21300000, guid: 47ea867fbaf414eafbc4f148343acaf2, type: 3}
-  - {fileID: 21300000, guid: fdb1d47775fc44b8eb3ec19ea0e7fe25, type: 3}
-  - {fileID: 21300000, guid: 91e5ea738403d464cad0e2cfbb0f3241, type: 3}
-  magicParticles: {fileID: 0}
+  - {fileID: 21300000, guid: 6a9714a7c6362488fba82bcc2537997f, type: 3}
+  - {fileID: 21300000, guid: 8c26ed418d8e74d3aadbbcab6852d362, type: 3}
+  magicParticles: {fileID: 2909234119838075483}
   fadeDuration: 0.4
+  randomStartFrame: 1
