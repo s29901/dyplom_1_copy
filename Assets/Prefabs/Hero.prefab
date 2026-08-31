@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeroMovement
   speed: 5
+  sprintMultiplier: 2
 --- !u!54 &7490354717645203349
 Rigidbody:
   m_ObjectHideFlags: 0
