@@ -4269,7 +4269,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.82772636}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.15747727}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5044,7 +5044,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.41422203}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.5819018}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6921,7 +6921,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.42286164}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.7076381}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7055,7 +7055,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.55382836}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.6031064}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -8100,14 +8100,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8165260523938380275, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: 'stageScale.Array.data[3]'
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8165260523938380275, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
-      propertyPath: 'stageScale.Array.data[4]'
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8376,6 +8368,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 32693107}
     m_Modifications:
+    - target: {fileID: 811313092147073196, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 811313092147073196, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032364392737571704, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_fontSize
+      value: 80
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032364392737571704, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 80
+      objectReference: {fileID: 0}
     - target: {fileID: 5897260457481753881, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_Name
       value: DialoguePanel
