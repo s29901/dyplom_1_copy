@@ -675,10 +675,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7da8ab443ef40668a8933e23e3f6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
+  trajectory: 1
+  randomizeOnStart: 1
   speed: 0.05
   speedVariation: 0.3
-  bobAmplitude: 0.05
-  bobSpeed: 0.3
+  amplitude: 0.4
+  frequency: 0.25
+  diagonalSlope: 0.08
   leftBound: 0
   rightBound: 0
   margin: 3
@@ -945,10 +948,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7da8ab443ef40668a8933e23e3f6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
+  trajectory: 1
+  randomizeOnStart: 1
   speed: 0.05
   speedVariation: 0.3
-  bobAmplitude: 0.05
-  bobSpeed: 0.3
+  amplitude: 0.4
+  frequency: 0.25
+  diagonalSlope: 0.08
   leftBound: 0
   rightBound: 0
   margin: 3
@@ -1058,10 +1064,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7da8ab443ef40668a8933e23e3f6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
+  trajectory: 1
+  randomizeOnStart: 1
   speed: 0.05
   speedVariation: 0.3
-  bobAmplitude: 0.05
-  bobSpeed: 0.3
+  amplitude: 0.4
+  frequency: 0.25
+  diagonalSlope: 0.08
   leftBound: 0
   rightBound: 0
   margin: 3
@@ -1673,7 +1682,7 @@ Camera:
   far clip plane: 124.3
   field of view: 60
   orthographic: 1
-  orthographic size: 8.84
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1900,10 +1909,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7da8ab443ef40668a8933e23e3f6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
+  trajectory: 1
+  randomizeOnStart: 1
   speed: 0.05
   speedVariation: 0.3
-  bobAmplitude: 0.05
-  bobSpeed: 0.3
+  amplitude: 0.4
+  frequency: 0.25
+  diagonalSlope: 0.08
   leftBound: 0
   rightBound: 0
   margin: 3
@@ -2085,10 +2097,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7da8ab443ef40668a8933e23e3f6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
+  trajectory: 1
+  randomizeOnStart: 1
   speed: 0.05
   speedVariation: 0.3
-  bobAmplitude: 0.05
-  bobSpeed: 0.3
+  amplitude: 0.4
+  frequency: 0.25
+  diagonalSlope: 0.08
   leftBound: 0
   rightBound: 0
   margin: 3
@@ -3718,10 +3733,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7da8ab443ef40668a8933e23e3f6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
+  trajectory: 1
+  randomizeOnStart: 1
   speed: 0.05
   speedVariation: 0.3
-  bobAmplitude: 0.05
-  bobSpeed: 0.3
+  amplitude: 0.4
+  frequency: 0.25
+  diagonalSlope: 0.08
   leftBound: 0
   rightBound: 0
   margin: 3
@@ -3745,7 +3763,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1171967777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4228,10 +4246,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7da8ab443ef40668a8933e23e3f6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
+  trajectory: 1
+  randomizeOnStart: 1
   speed: 0.05
   speedVariation: 0.3
-  bobAmplitude: 0.05
-  bobSpeed: 0.3
+  amplitude: 0.4
+  frequency: 0.25
+  diagonalSlope: 0.08
   leftBound: 0
   rightBound: 0
   margin: 3
@@ -4682,10 +4703,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7da8ab443ef40668a8933e23e3f6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CloudDrift
+  trajectory: 1
+  randomizeOnStart: 1
   speed: 0.05
   speedVariation: 0.3
-  bobAmplitude: 0.05
-  bobSpeed: 0.3
+  amplitude: 0.4
+  frequency: 0.25
+  diagonalSlope: 0.08
   leftBound: 0
   rightBound: 0
   margin: 3
@@ -5007,7 +5031,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 8.84
+    OrthographicSize: 4
     NearClipPlane: 0.3
     FarClipPlane: 124.3
     Dutch: 0

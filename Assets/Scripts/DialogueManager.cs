@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
 
     // Плейлист реплик текущего диалога (сюда вставляются реплики после выбора)
     private List<DialogueData.DialogueLine> playlist;
+    private readonly HashSet<int> resolvedChoices = new HashSet<int>(); // выборы, которые уже сделаны
     private int currentLineIndex;
     private bool isTyping;
     private bool choiceActive;
@@ -126,6 +127,7 @@ public class DialogueManager : MonoBehaviour
         }
         if (playlist.Count == 0) return;
 
+        resolvedChoices.Clear();
         currentLineIndex = 0;
         startFrame = Time.frameCount;
         isTyping = false;
@@ -173,6 +175,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         if (typingCoroutine != null) StopCoroutine(typingCoroutine);
+        isTyping = true; // выставляем сразу: корутина стартует со следующего кадра
         typingCoroutine = StartCoroutine(TypeText(ProcessText(line.text), line));
     }
 
@@ -208,6 +211,7 @@ public class DialogueManager : MonoBehaviour
         {
             // UI выбора не настроен — тихо выбираем вариант A, чтобы игра не встала
             ApplyChoice(line, true);
+            resolvedChoices.Add(currentLineIndex); // выбор сделан, реплику можно листать
             return;
         }
         choiceActive = true;
@@ -229,6 +233,7 @@ public class DialogueManager : MonoBehaviour
         choiceActive = false;
         if (choicePanel != null) choicePanel.SetActive(false);
         ApplyChoice(line, a);
+        resolvedChoices.Add(currentLineIndex);
         // ApplyChoice вставил реплики после текущей — показываем их
         currentLineIndex++;
         ShowLine();
@@ -289,11 +294,13 @@ public class DialogueManager : MonoBehaviour
             if (typingCoroutine != null) StopCoroutine(typingCoroutine);
             dialogueText.text = ProcessText(line.text);
             isTyping = false;
-            if (line.HasChoice) ShowChoices(line);
+            if (line.HasChoice && !resolvedChoices.Contains(currentLineIndex))
+                ShowChoices(line);
             return;
         }
 
-        if (line.HasChoice) return; // выбор уже показан кнопками
+        // Ждём нажатия кнопки только если выбор ещё не сделан
+        if (line.HasChoice && !resolvedChoices.Contains(currentLineIndex)) return;
 
         currentLineIndex++;
         if (currentLineIndex >= playlist.Count)

@@ -84,8 +84,9 @@ public class CloudSpawner : MonoBehaviour
         drift.speed = speed;
         drift.leftBound = left;
         drift.rightBound = right;
-        drift.bobAmplitude = bobAmplitude * Mathf.Max(scale, 0.1f);
-        drift.bobSpeed = Random.Range(0.2f, 0.45f);
+        drift.randomizeOnStart = true;               // своя траектория у каждого облака
+        drift.amplitude = bobAmplitude * Mathf.Max(scale, 0.1f);
+        drift.frequency = Random.Range(0.2f, 0.45f);
         drift.fadeAtEdges = false;
     }
 

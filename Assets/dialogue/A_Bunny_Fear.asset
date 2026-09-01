@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
-  m_Name: A_Hedgehog_Fear
+  m_Name: A_Bunny_Fear
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Hedgehog
+  - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "D-don't come closer! ...No, wait. Don't go. I never know which one I want."
@@ -23,7 +23,7 @@ MonoBehaviour:
     choiceKeyB: a_fear_fix
     reactionA: "You're... not laughing at me? The fear feels smaller when someone stays next to it."
     reactionB: "But I am afraid. When you say it's nothing, I'm still afraid — just alone with it now."
-  - speakerName: Hedgehog
+  - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "I'm still a little scared. But it's not the lonely kind of scared anymore. That's different. That's better."

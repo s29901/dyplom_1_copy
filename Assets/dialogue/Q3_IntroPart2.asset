@@ -18,11 +18,11 @@ MonoBehaviour:
     speakerOnRight: 0
     text: "What are they waiting for?"
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "For someone to listen. Not to fix them. Not to chase them away. Just to listen."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Will you hear them out?"
     choiceA: "What if I say something wrong?"

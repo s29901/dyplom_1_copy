@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 // Клик по птице в квестовой сцене. Повесить на птицу вместе с Collider.
@@ -17,7 +18,26 @@ public class QuestBirdInteraction : MonoBehaviour
         if (cutscene != null && !cutscene.IntroFinished) return; // интро ещё не закончилось
 
         DialogueData d = IsQuestDone() ? afterQuestDialogue : beforeQuestDialogue;
-        if (d != null) dm.StartDialogue(d);
+        if (d != null)
+        {
+            dm.StartDialogue(d);
+            if (startsRestAfterTalk && !IsQuestDone())
+                StartCoroutine(StartRestWhenDone());
+        }
+    }
+
+    [Header("Q4: начать отсчёт отдыха после этого разговора")]
+    public bool startsRestAfterTalk = false;
+
+    private IEnumerator StartRestWhenDone()
+    {
+        var dm = DialogueManager.Instance;
+        yield return null;
+        while (dm != null && dm.IsDialogueActive)
+            yield return null;
+
+        var q4 = FindFirstObjectByType<QuestManager_Q4>();
+        if (q4 != null) q4.StartRest();
     }
 
     private bool IsQuestDone()

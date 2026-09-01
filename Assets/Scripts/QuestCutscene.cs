@@ -38,6 +38,12 @@ public class QuestCutscene : MonoBehaviour
         if (oncePerGame && PlayerPrefs.GetInt("cutscene_" + cutsceneId, 0) == 1)
         {
             IntroFinished = true; // интро уже показывали — сразу обычный режим
+
+            // Страховка: если управление осталось выключенным в сцене
+            // (например, сцену сохранили во время катсцены) — вернуть его
+            if (heroMovement != null) heroMovement.enabled = true;
+            if (questUI != null) questUI.SetActive(true);
+            SetInteractables(true);
             yield break;
         }
 

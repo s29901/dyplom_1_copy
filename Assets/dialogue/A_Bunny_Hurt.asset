@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
-  m_Name: A_Fawn_Hurt
+  m_Name: A_Bunny_Hurt
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Fawn
+  - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "They forgot about me. They always forget. It was so long ago... so why does it still sting?"
@@ -23,7 +23,7 @@ MonoBehaviour:
     choiceKeyB: a_hurt_fix
     reactionA: "Yes. It did. Thank you for not pretending it didn't."
     reactionB: "I tried forgetting. Every day. It doesn't work. A hurt needs to be heard before it can leave."
-  - speakerName: Fawn
+  - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Maybe the sting fades once somebody knows about it. It already stings a little less."

@@ -16,6 +16,12 @@ public class HeroMovement : MonoBehaviour
         cam = Camera.main;
         cc = GetComponent<CharacterController>();
         lockedY = transform.position.y;
+
+        // Земля (слой Ground) — это подложка для рисования границ и сортировки,
+        // а не препятствие. Герой её игнорирует, иначе он застревает внутри плиты.
+        int ground = LayerMask.NameToLayer("Ground");
+        if (cc != null && ground >= 0)
+            cc.excludeLayers |= 1 << ground;
     }
 
     void Update()

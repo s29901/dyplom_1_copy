@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "You're here. I was starting to think you'd never come back."
   - speakerName: Hero
@@ -22,7 +22,7 @@ MonoBehaviour:
     speakerOnRight: 0
     text: "Back? I've never been here before."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "You have. A long time ago. This is your garden."
   - speakerName: Hero
@@ -30,7 +30,7 @@ MonoBehaviour:
     speakerOnRight: 0
     text: "Mine? But it's all... broken."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Nobody took care of it when it needed care most. That wasn't your fault. But you're the only one who can bring it back now."
   - speakerName: Hero
@@ -38,7 +38,7 @@ MonoBehaviour:
     speakerOnRight: 0
     text: "I don't know how to fix anything."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Nobody does, at first. See that little tree? It's still alive. That's enough to start."
     choiceA: "And if I fail?"

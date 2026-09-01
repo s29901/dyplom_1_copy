@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4750219136723525626
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2995935676660070965}
+  - component: {fileID: 5848946670816867090}
+  - component: {fileID: 2631639031815478518}
+  m_Layer: 0
+  m_Name: Boundary 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!4 &2995935676660070965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4750219136723525626}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.81496, y: -1.06, z: -0.41637}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &5848946670816867090
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4750219136723525626}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: -1
+  m_Mesh: {fileID: 0}
+--- !u!114 &2631639031815478518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4750219136723525626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 363fe191bc9364aea9c85a1ac75a128b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EditableColliderTool
+  isClosedShape: 1
+  points:
+  - {x: -2.0247545, y: 1.06, z: -0.37231007}
+  - {x: -3.3735456, y: 1.06, z: -1.9030083}
+  - {x: -5.5840797, y: 1.06, z: -2.8574677}
+  - {x: -6.799531, y: 0.9551408, z: -4.692469}
+  - {x: -8.616515, y: 1.06, z: -7.6350684}
+  - {x: -5.7767553, y: 1.06, z: -7.3757586}
+  - {x: -2.9419355, y: 1.06, z: -6.5713935}
+  - {x: -1.3741655, y: 1.06, z: -7.7252803}
+  - {x: 0.5758486, y: 1.06, z: -8.096993}
+  - {x: 0.54427433, y: 0.9551408, z: -5.8980217}
+  - {x: 2.468279, y: 0.9551408, z: -5.600035}
+  - {x: 4.574685, y: 1.06, z: -6.8538036}
+  - {x: 4.16292, y: 0.9551408, z: -4.4120836}
+  - {x: 5.294671, y: 0.9551408, z: -1.7660776}
+  - {x: 7.5678377, y: 1.06, z: -2.0376234}
+  - {x: 8.187188, y: 1.06, z: -1.6426619}
+  - {x: 7.944442, y: 1.06, z: -0.6325284}
+  - {x: 6.0832167, y: 1.06, z: -1.4670199}
+  - {x: 4.974494, y: 1.06, z: 0.58654296}
+  - {x: 4.1470966, y: 1.06, z: 1.6692575}
+  height: 2
+  reverseTriangles: 1

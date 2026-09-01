@@ -15,7 +15,9 @@ public class QuestManager_Q4 : MonoBehaviour
     public float questDuration = 30f;
 
     [Header("Диалоги (нужен DialogueManager в сцене)")]
-    public DialogueData introDialogue;      // играет при входе в сцену
+    [Tooltip("Вступительный диалог. Запускается кликом по птице (QuestBirdInteraction), " +
+             "а не автоматически. Отсчёт отдыха начинается после него.")]
+    public DialogueData introDialogue;
     public DialogueData completionDialogue; // играет после questDuration
 
     private float timer = 0f;
@@ -39,14 +41,20 @@ public class QuestManager_Q4 : MonoBehaviour
 
         yield return null; // кадр на инициализацию DialogueManager
 
-        if (introDialogue != null && DialogueManager.Instance != null)
-        {
-            DialogueManager.Instance.StartDialogue(introDialogue);
-            while (DialogueManager.Instance.IsDialogueActive)
-                yield return null;
-        }
-        introDone = true;
+        // Диалог сам не запускается: игрок ходит свободно и сам подходит к птице.
+        // Отсчёт начнётся, когда разговор закончится (см. StartRest).
     }
+
+    // Вызывать после разговора с птицей — отсюда начинается отсчёт отдыха.
+    // Птица делает это сама: QuestBirdInteraction сообщает о конце диалога.
+    public void StartRest()
+    {
+        if (introDone || completed) return;
+        introDone = true;
+        timer = 0f;
+    }
+
+    public bool RestStarted => introDone;
 
     void Update()
     {
@@ -74,6 +82,13 @@ public class QuestManager_Q4 : MonoBehaviour
     private void UpdateTimerLabel(bool paused)
     {
         if (!showDebugTimer || timerText == null) return;
+
+        if (!introDone)
+        {
+            timerText.text = "Q4: поговори с птицей";
+            return;
+        }
+
         float left = Mathf.Max(0f, questDuration - timer);
         timerText.text = $"Q4: {left:0.0}s{(paused ? " (pause)" : "")}";
     }

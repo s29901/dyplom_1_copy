@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
-  m_Name: A_Owl_Tiredness
+  m_Name: A_Bunny_Tiredness
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Owl
+  - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "I can't keep my eyes open... but I mustn't stop. There is so much left to do. There is always so much left to do."
@@ -23,7 +23,7 @@ MonoBehaviour:
     choiceKeyB: a_tired_fix
     reactionA: "Allowed...? No one has ever said that word to me before."
     reactionB: "Hurrying is... how I got this tired in the first place. Maybe... maybe I could just stop for a moment."
-  - speakerName: Owl
+  - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "Just saying it out loud makes my wings feel lighter. Perhaps the world can wait one evening."
+    text: "Just saying it out loud makes my ears feel lighter. Perhaps the world can wait one evening."

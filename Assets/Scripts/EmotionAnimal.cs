@@ -25,8 +25,16 @@ public class EmotionAnimal : MonoBehaviour
     public bool spriteFacesLeft = true; // куда «смотрит» исходный спрайт
 
     [Header("После утешения")]
+    [Tooltip("Оставить зверька на месте (он просто становится спокойным). " +
+             "Выключи, если хочешь, чтобы он уходил к точке сбора или гулял.")]
+    public bool stayInPlace = true;
     public Transform gatherPoint;        // точка сбора у дерева (можно пусто)
     public ParticleSystem comfortParticles;
+
+    [Header("Радость после разговора")]
+    public bool happyHop = true;         // короткий подскок в момент утешения
+    public float hopHeight = 0.25f;
+    public float hopDuration = 0.45f;
 
     public bool Heard { get; private set; }
 
@@ -52,11 +60,14 @@ public class EmotionAnimal : MonoBehaviour
         // Пока зверька не выслушали — он сидит неподвижно со своим чувством.
         if (!Heard) return;
 
+        // Выслушанный зверёк остаётся на своём месте — просто спокойный и радостный
+        if (stayInPlace) return;
+
         // Диалог на экране (любой) — зверьки замирают
         if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive)
             return;
 
-        // Выслушанный зверёк оживает: идёт к точке сбора или спокойно гуляет
+        // Иначе: идёт к точке сбора или спокойно гуляет
         if (gatherPoint != null)
         {
             if (StepTowards(gatherPoint.position))
@@ -90,6 +101,21 @@ public class EmotionAnimal : MonoBehaviour
         var s = transform.localScale;
         s.x = Mathf.Abs(s.x) * ((movingLeft == spriteFacesLeft) ? 1f : -1f);
         transform.localScale = s;
+    }
+
+    // Короткий радостный подскок на месте
+    private IEnumerator HappyHop()
+    {
+        Vector3 ground = transform.position;
+        for (float t = 0f; t < hopDuration; t += Time.deltaTime)
+        {
+            float k = t / hopDuration;
+            // дуга: вверх и обратно
+            float y = Mathf.Sin(k * Mathf.PI) * hopHeight;
+            transform.position = ground + Vector3.up * y;
+            yield return null;
+        }
+        transform.position = ground;
     }
 
     private void PickNewTarget()
@@ -133,6 +159,7 @@ public class EmotionAnimal : MonoBehaviour
 
         if (sr != null && calmSprite != null) sr.sprite = calmSprite;
         if (comfortParticles != null) comfortParticles.Play();
+        if (happyHop) StartCoroutine(HappyHop());
 
         var qm = FindFirstObjectByType<QuestManager_Q3>();
         if (qm != null) qm.OnAnimalHeard();

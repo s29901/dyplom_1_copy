@@ -43,6 +43,9 @@ public class PlantGrowth : MonoBehaviour
 
     public bool IsTransitioning => transitioning;
 
+    // Текущая стадия (0-4) — нужна тени и другим эффектам
+    public int CurrentStageIndex => lastStage;
+
     void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();

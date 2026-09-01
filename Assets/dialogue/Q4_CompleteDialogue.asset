@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "See? The world didn't fall apart while you rested."
   - speakerName: Hero
@@ -22,10 +22,10 @@ MonoBehaviour:
     speakerOnRight: 0
     text: "...I forgot this was allowed."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "It always was. And it always will be."
   - speakerName: Bird
-    speakerPortrait: {fileID: 21300000, guid: dae8213c183b84096839dba6e2624a24, type: 3}
+    speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Now come. Let's go back to your garden. It has something to show you."

@@ -51,10 +51,10 @@ MonoBehaviour:
   choicePanel: {fileID: 0}
   choiceTextA: {fileID: 0}
   choiceTextB: {fileID: 0}
-  namePosLeft: {x: 200, y: 3000}
-  namePosRight: {x: 600, y: 3000}
-  portraitPosLeft: {x: -500, y: -1200}
+  namePosLeft: {x: 300, y: 2600}
+  namePosRight: {x: 1200, y: 2600}
+  portraitPosLeft: {x: -700, y: -1200}
   portraitPosRight: {x: 1500, y: -700}
-  portraitSizeLeft: {x: 2000, y: 2000}
-  portraitSizeRight: {x: 2000, y: 2500}
+  portraitSizeLeft: {x: 2400, y: 1700}
+  portraitSizeRight: {x: 2000, y: 2000}
   typingSpeed: 0.03

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90b1af8943794c7f870ab17e35297c59, type: 3}
-  m_Name: A_Fox_Anger
+  m_Name: A_Bunny_Anger
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Fox
+  - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Go away! ...No. Stay. I don't know! Everything is UNFAIR and nobody cares!"
@@ -23,7 +23,7 @@ MonoBehaviour:
     choiceKeyB: a_anger_fix
     reactionA: "I AM angry! And... it feels good that someone finally just sees it. Without flinching."
     reactionB: "Telling me to calm down has never calmed anyone in the history of ever. Just let me be angry for one minute."
-  - speakerName: Fox
+  - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "...The fire got smaller. It does that, when it's allowed to burn for a bit. Thank you for not running away."
