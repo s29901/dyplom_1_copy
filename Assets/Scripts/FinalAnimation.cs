@@ -25,8 +25,11 @@ public class FinalAnimation : MonoBehaviour
     public float delayBetween = 0.9f;      // пауза между картинками
     public float pictureFadeIn = 0.3f;     // проявление самой картинки
 
-    [Header("Звук вспышки (из Resources/audio, можно пусто)")]
+    [Header("Звук появления картинки (из Resources/audio, можно пусто)")]
     public string flashSfx = "tree_transform";
+
+    [Header("Музыка финала (из Resources/audio, можно пусто)")]
+    public string musicTrack = "final_scene";
 
     [Header("Кнопки внизу (появляются после всех картинок)")]
     public GameObject buttonsRoot;      // объект с кнопками Back и Main Menu
@@ -129,6 +132,10 @@ public class FinalAnimation : MonoBehaviour
     {
         IsPlaying = true;
         played = true;
+
+        // Музыка финала (плавно сменит текущую)
+        if (!string.IsNullOrEmpty(musicTrack) && AudioManager.Instance != null)
+            AudioManager.Instance.PlayMusic(musicTrack);
 
         yield return new WaitForSeconds(delayBeforeStart);
 
