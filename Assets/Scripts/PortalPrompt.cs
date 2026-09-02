@@ -59,6 +59,6 @@ public class PortalPrompt : MonoBehaviour
     private void OnYes()
     {
         if (!string.IsNullOrEmpty(targetScene))
-            SceneManager.LoadScene(targetScene);
+            SceneTransition.Load(targetScene);
     }
 }

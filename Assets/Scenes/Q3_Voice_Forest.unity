@@ -3550,7 +3550,7 @@ Transform:
   m_GameObject: {fileID: 700890790}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -7.06, y: 59.827435, z: -64}
+  m_LocalPosition: {x: 12.001793, y: 59.827435, z: -64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4921,7 +4921,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.57254905, a: 0.3584138}
+  m_Color: {r: 1, g: 0.92156863, b: 0.57254905, a: 0.740985}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4940,7 +4940,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.87, y: 0, z: -1.78}
-  m_LocalScale: {x: 1.1299192, y: 1.1299192, z: 1.1299192}
+  m_LocalScale: {x: 1.1190047, y: 1.1190047, z: 1.1190047}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6027,8 +6027,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 24.10645, y: 51.305367, z: 31.38182}
-  m_Center: {x: 2.2975554, y: 34.17475, z: -72.03976}
+  m_Size: {x: 23.648472, y: 51.305367, z: 31.38182}
+  m_Center: {x: 2.2975564, y: 34.17475, z: -72.03976}
 --- !u!4 &1344456515
 Transform:
   m_ObjectHideFlags: 0
@@ -7206,7 +7206,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6916144237057145420, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.12
+      value: 19.3
       objectReference: {fileID: 0}
     - target: {fileID: 6916144237057145420, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -7516,7 +7516,7 @@ Transform:
   m_GameObject: {fileID: 1666666365}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: -7.06, y: 61.8, z: -64}
+  m_LocalPosition: {x: 19.359999, y: 61.8, z: -64}
   m_LocalScale: {x: 1, y: 1, z: 1.0177}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7937,6 +7937,14 @@ PrefabInstance:
     - target: {fileID: 7948713443373760169, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165260523938380275, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
+      propertyPath: 'stageScale.Array.data[3]'
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165260523938380275, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
+      propertyPath: 'stageScale.Array.data[4]'
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -8,7 +8,7 @@ public class QuestManager_Q4 : MonoBehaviour
     public GameObject completionText;
 
     [Header("Отладочный таймер (выключить перед релизом)")]
-    public bool showDebugTimer = true;
+    public bool showDebugTimer = false;
     public TMP_Text timerText; // можно не назначать: найдётся объект "QuestTimer"
 
     [Header("Настройки")]

@@ -22,7 +22,6 @@ public class MainMenu : MonoBehaviour
     public TMP_InputField nameInput; // поле ввода имени на namePanel
     public Button playButton;        // кнопка Play
     public Button startButton;       // кнопка Start на панели имени — гаснет при пустом поле
-    public Slider volumeSlider;      // ползунок громкости на optionsPanel (необязательно)
 
     private void Start()
     {
@@ -36,12 +35,7 @@ public class MainMenu : MonoBehaviour
                 v => startButton.interactable = !string.IsNullOrWhiteSpace(v));
         }
 
-        if (volumeSlider != null)
-        {
-            volumeSlider.value = PlayerPrefs.GetFloat("volume", 1f);
-            AudioListener.volume = volumeSlider.value;
-            volumeSlider.onValueChanged.AddListener(SetVolume);
-        }
+        // Громкость и язык настраиваются в OptionsPanel (скрипт OptionsPanel)
     }
 
     // ---- Кнопки ----
@@ -54,7 +48,7 @@ public class MainMenu : MonoBehaviour
             OnNewGame();
             return;
         }
-        SceneManager.LoadScene(hubSceneName);
+        SceneTransition.Load(hubSceneName);
     }
 
     public void OnNewGame()
@@ -97,7 +91,7 @@ public class MainMenu : MonoBehaviour
             ProgressManager.Instance.quest4Done = false;
         }
 
-        SceneManager.LoadScene(firstSceneName);
+        SceneTransition.Load(firstSceneName);
     }
 
     public void OnOptions()
@@ -129,10 +123,4 @@ public class MainMenu : MonoBehaviour
         if (creditsPanel != null) creditsPanel.SetActive(false);
     }
 
-    private void SetVolume(float v)
-    {
-        AudioListener.volume = v;
-        PlayerPrefs.SetFloat("volume", v);
-        PlayerPrefs.Save();
-    }
 }

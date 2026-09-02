@@ -30,7 +30,7 @@ public class EndingCutscene : MonoBehaviour
         if (!string.IsNullOrEmpty(nextScene))
         {
             yield return new WaitForSeconds(delayAfterDialogue);
-            SceneManager.LoadScene(nextScene);
+            SceneTransition.Load(nextScene);
         }
     }
 }

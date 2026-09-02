@@ -140,6 +140,7 @@ public class PlantGrowth : MonoBehaviour
 
         if (magicParticles != null)
             magicParticles.Play();
+        AudioManager.PlaySfx("tree_transform");
 
         yield return Fade(1f, 0f);   // растворяем старое дерево
 

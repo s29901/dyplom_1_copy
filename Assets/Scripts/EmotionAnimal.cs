@@ -160,6 +160,7 @@ public class EmotionAnimal : MonoBehaviour
         if (sr != null && calmSprite != null) sr.sprite = calmSprite;
         if (comfortParticles != null) comfortParticles.Play();
         if (happyHop) StartCoroutine(HappyHop());
+        AudioManager.PlaySfx("bunny_transform");
 
         var qm = FindFirstObjectByType<QuestManager_Q3>();
         if (qm != null) qm.OnAnimalHeard();

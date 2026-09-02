@@ -18,6 +18,12 @@ public class QuestLamp : MonoBehaviour
     [Header("Свечение (необязательно)")]
     public GameObject glowObject;      // дочерний объект: ореол, частицы, свет
 
+    [Header("Звук зажжённой лампы (из Resources/audio)")]
+    public bool lampSound = true;
+    public string lampSfx = "light";
+    public float soundVolume = 0.5f;
+    public float soundRange = 12f;   // с какого расстояния слышно
+
     [Header("Пульсация зажжённой лампы")]
     public bool pulse = true;
     public float pulseSpeed = 1.2f;
@@ -49,6 +55,39 @@ public class QuestLamp : MonoBehaviour
 
         if (glowObject != null && glowObject.activeSelf != isOn)
             glowObject.SetActive(isOn);
+
+        UpdateLampSound();
+    }
+
+    private AudioSource lampSource;
+
+    // Зациклённый звук фонаря: слышен, только пока лампа горит,
+    // и тем громче, чем ближе к ней герой
+    private void UpdateLampSound()
+    {
+        if (!lampSound) { if (lampSource != null) lampSource.Stop(); return; }
+
+        if (lampSource == null)
+        {
+            var clip = Resources.Load<AudioClip>("audio/" + lampSfx);
+            if (clip == null) return;
+
+            lampSource = gameObject.AddComponent<AudioSource>();
+            lampSource.clip = clip;
+            lampSource.loop = true;
+            lampSource.playOnAwake = false;
+            lampSource.spatialBlend = 1f;                     // звук из точки в пространстве
+            lampSource.rolloffMode = AudioRolloffMode.Linear;
+            lampSource.minDistance = 1.5f;
+            lampSource.maxDistance = soundRange;
+            lampSource.time = Random.Range(0f, clip.length);  // лампы не в унисон
+        }
+
+        float v = soundVolume * (AudioManager.Instance != null ? AudioManager.Instance.sfxVolume : 1f);
+        lampSource.volume = v;
+
+        if (isOn && !lampSource.isPlaying) lampSource.Play();
+        else if (!isOn && lampSource.isPlaying) lampSource.Stop();
     }
 
     private bool ShouldBeOn()

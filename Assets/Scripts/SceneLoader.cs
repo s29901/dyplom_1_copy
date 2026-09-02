@@ -6,19 +6,21 @@ public class SceneLoader : MonoBehaviour
     // Wczytuje każdą scenę po nazwie, używane wszędzie
     public void LoadScene(string sceneName)
     {
-        SceneManager.LoadScene(sceneName);
+        SceneTransition.Load(sceneName);
     }
 
     // Szybki powrót do hubu, będziemy wywoływać po każdym queście
     public void LoadHub()
     {
-        SceneManager.LoadScene("02_HubGarden");
+        SceneTransition.Load("02_HubGarden");
     }
 
     // Następna scena w kolejności, przydatne dla intro i zakończenia
     public void LoadNextScene()
     {
-        int currentIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentIndex + 1);
+        int nextIndex = SceneManager.GetActiveScene().buildIndex + 1;
+        string next = System.IO.Path.GetFileNameWithoutExtension(
+            SceneUtility.GetScenePathByBuildIndex(nextIndex));
+        SceneTransition.Load(next);
     }
 }

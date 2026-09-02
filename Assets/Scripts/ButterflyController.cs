@@ -61,6 +61,8 @@ public class ButterflyController : MonoBehaviour
 
     void OnMouseDown()
     {
+        AudioManager.PlaySfx("buterfly_click");
+        AudioManager.SuppressClick();   // общий щелчок мыши здесь не нужен
         sr.color = new Color(Random.value, Random.value, Random.value);
         StartCoroutine(Jump());
         SpawnTrail();
