@@ -16,14 +16,14 @@ MonoBehaviour:
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "D-don't come closer! ...No, wait. Don't go. I never know which one I want."
-    choiceA: "It's okay to be scared. I'll stay right here."
-    choiceB: "There's nothing to be afraid of!"
+    text: "N-nie podchodź bliżej! ...Nie, czekaj. Nie odchodź. Nigdy nie wiem, czego właściwie chcę."
+    choiceA: "Można się bać. Zostanę tutaj, przy tobie."
+    choiceB: "Nie ma się czego bać!"
     choiceKeyA: a_fear_listen
     choiceKeyB: a_fear_fix
-    reactionA: "You're... not laughing at me? The fear feels smaller when someone stays next to it."
-    reactionB: "But I am afraid. When you say it's nothing, I'm still afraid — just alone with it now."
+    reactionA: "Ty... nie śmiejesz się ze mnie? Strach robi się mniejszy, kiedy ktoś przy nim zostaje."
+    reactionB: "Ale ja się boję. Kiedy mówisz, że to nic, wciąż się boję — tylko już całkiem sam."
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "I'm still a little scared. But it's not the lonely kind of scared anymore. That's different. That's better."
+    text: "Wciąż trochę się boję. Ale to już nie jest ten samotny strach. To co innego. To lepsze."

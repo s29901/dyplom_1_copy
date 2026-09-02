@@ -16,16 +16,16 @@ MonoBehaviour:
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "It worked... I didn't think I could do that."
+    text: "Udało się... Wydawało mi się, że nie dam rady."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "See? It didn't need anything extraordinary. Just a little warmth."
+    text: "Widzisz? Nie było potrzebne nic niezwykłego. Wystarczyło trochę ciepła."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "So... is this how I can bring my garden back to life?"
+    text: "Więc... tak właśnie mogę przywrócić mój ogród do życia?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Not all at once. But this is how it begins. Step by step."
+    text: "Nie od razu cały. Ale tak właśnie się to zaczyna. Krok po kroku."

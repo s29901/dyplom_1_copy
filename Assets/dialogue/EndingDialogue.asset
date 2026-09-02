@@ -16,52 +16,52 @@ MonoBehaviour:
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Look at your tree."
+    text: "Spójrz na swoje drzewo."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "It's so tall now... When did that happen?"
+    text: "Jest teraz takie wysokie... Kiedy to się stało?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "While you weren't looking. That's how growing works."
+    text: "Wtedy, kiedy nikt nie patrzył. Tak właśnie rosną rzeczy."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Remember when you asked what would happen if you failed? You never needed the answer."
+    text: "Pamiętasz to pytanie: a jeśli mi się nie uda? Odpowiedź nigdy nie była ci potrzebna."
     requiredChoiceKey: intro_fail
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "You once called it 'just one small tree'. Look at it now."
+    text: "Kiedyś było to „tylko jedno małe drzewko”. Spójrz na nie teraz."
     requiredChoiceKey: intro_smalltree
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "And you never said anything wrong to them. You stayed. That was enough."
+    text: "I ani jedno twoje słowo nie okazało się tym niewłaściwym. Wystarczyła sama twoja obecność."
     requiredChoiceKey: q3_wrongwords
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "You thought rest was a waste of time. And yet here we are."
+    text: "Odpoczynek wydawał ci się stratą czasu. A jednak jesteśmy tutaj."
     requiredChoiceKey: q4_waste
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Will the garden be okay when I leave?"
+    text: "Czy z ogrodem będzie dobrze, kiedy odejdę?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "You're not leaving. It's your garden. It's with you everywhere."
+    text: "Nigdzie nie odchodzisz. To twój ogród. Jest z tobą wszędzie."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Some days it will rain here. Some days it will be cold. But now you know what to do."
+    text: "Będą tu dni deszczowe. Będą dni chłodne. Ale teraz już wiesz, co robić."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Come back. Bring warmth. Let the rain fall. Speak. Rest."
+    text: "Wracać. Przynosić ciepło. Pozwalać deszczowi padać. Mówić. Odpoczywać."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "And I'll be here. Every time."
+    text: "A ja tu będę. Za każdym razem."

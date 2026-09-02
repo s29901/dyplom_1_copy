@@ -1473,7 +1473,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: fear
+  m_text: strach
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
@@ -4250,7 +4250,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: say
+  m_text: powiedz
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
@@ -5046,7 +5046,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.57254905, a: 0.72474694}
+  m_Color: {r: 1, g: 0.92156863, b: 0.57254905, a: 0.7165527}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5065,7 +5065,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 16.87, y: 0, z: -1.78}
-  m_LocalScale: {x: 1.2799227, y: 1.2799227, z: 1.2799227}
+  m_LocalScale: {x: 1.1923988, y: 1.1923988, z: 1.1923988}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6590,7 +6590,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Your words have the right to sound
+  m_text: "Twoje s\u0142owa maj\u0105 prawo zabrzmie\u0107"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
@@ -6780,41 +6780,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 534067914}
     m_Modifications:
-    - target: {fileID: 811313092147073196, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_fontSize
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 811313092147073196, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 1469679694152698741, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2000
-      objectReference: {fileID: 0}
-    - target: {fileID: 4912083203595897627, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 464
-      objectReference: {fileID: 0}
-    - target: {fileID: 4912083203595897627, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -903
-      objectReference: {fileID: 0}
-    - target: {fileID: 5032364392737571704, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_fontSize
-      value: 80
-      objectReference: {fileID: 0}
-    - target: {fileID: 5032364392737571704, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_fontSizeBase
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 5897260457481753881, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_Name
       value: DialoguePanel
       objectReference: {fileID: 0}
-    - target: {fileID: 6022489337942110232, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -895
+    - target: {fileID: 8722710201641264435, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 167
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_AnchorMax.x
@@ -6841,12 +6821,40 @@ PrefabInstance:
       value: 2500
       objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -27
       objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -636
+      value: -534
       objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -9317,7 +9325,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: silent
+  m_text: zmilcz
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}

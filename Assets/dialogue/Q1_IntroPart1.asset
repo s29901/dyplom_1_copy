@@ -16,20 +16,20 @@ MonoBehaviour:
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Can you feel it?"
+    text: "Czujesz to?"
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "The cold. Yeah. I thought it was just me."
+    text: "Chłód. Tak. Wydawało mi się, że to tylko ja."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "It's not just you. It's this whole place."
+    text: "To nie tylko ty. To całe to miejsce."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "But the sun is shining..."
+    text: "Ale przecież świeci słońce..."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Sometimes light alone isn't enough."
+    text: "Czasem samo światło nie wystarczy."

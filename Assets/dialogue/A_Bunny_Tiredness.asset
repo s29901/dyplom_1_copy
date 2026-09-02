@@ -16,14 +16,14 @@ MonoBehaviour:
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "I can't keep my eyes open... but I mustn't stop. There is so much left to do. There is always so much left to do."
-    choiceA: "You're allowed to rest, you know."
-    choiceB: "Then hurry up and finish everything!"
+    text: "Ledwo trzymam otwarte oczy... ale nie wolno mi przestać. Tyle jeszcze zostało do zrobienia. Zawsze zostaje tyle do zrobienia."
+    choiceA: "Wiesz, wolno ci odpocząć."
+    choiceB: "To pospiesz się i skończ wszystko!"
     choiceKeyA: a_tired_listen
     choiceKeyB: a_tired_fix
-    reactionA: "Allowed...? No one has ever said that word to me before."
-    reactionB: "Hurrying is... how I got this tired in the first place. Maybe... maybe I could just stop for a moment."
+    reactionA: "Wolno...? Nikt nigdy nie powiedział mi tego słowa."
+    reactionB: "To właśnie ten pośpiech... tak mnie zmęczył. Może... może mógłbym się na chwilę zatrzymać."
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "Just saying it out loud makes my ears feel lighter. Perhaps the world can wait one evening."
+    text: "Samo powiedzenie tego na głos sprawia, że uszy robią mi się lżejsze. Może świat poczeka jeden wieczór."

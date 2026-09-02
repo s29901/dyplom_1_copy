@@ -16,27 +16,27 @@ MonoBehaviour:
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "This one looks even weaker than the last."
+    text: "Ta wygląda jeszcze słabiej niż poprzednia."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "It's been thirsty for a very long time."
+    text: "Od bardzo dawna jest spragniona."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Then why doesn't it rain?"
+    text: "To dlaczego nie pada?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Because these clouds are still holding on."
+    text: "Bo te chmury wciąż wszystko w sobie trzymają."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Holding on to what?"
+    text: "Trzymają? Co takiego?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "To tears that were never allowed to fall."
+    text: "Łzy, którym nigdy nie pozwolono spaść."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
@@ -44,12 +44,12 @@ MonoBehaviour:
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Can tears really help something grow?"
+    text: "Czy łzy naprawdę mogą pomóc czemuś rosnąć?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Sometimes... The tears we hide become storms inside us. The tears we let fall become rain."
+    text: "Czasem... Łzy, które ukrywamy, zamieniają się w burze w środku. Łzy, którym pozwalamy płynąć, zamieniają się w deszcz."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Will you help this little plant?"
+    text: "Pomożesz tej małej roślince?"

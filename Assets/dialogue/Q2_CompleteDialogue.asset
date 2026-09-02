@@ -16,16 +16,16 @@ MonoBehaviour:
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "It grew..."
+    text: "Urosła..."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Yes. Sometimes growing begins the moment we stop holding everything inside."
+    text: "Tak. Czasem wzrost zaczyna się w tej chwili, w której przestajemy wszystko dusić w sobie."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "So... it's okay to cry?"
+    text: "Więc... można płakać?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Of course. Even the strongest gardens need rain."
+    text: "Oczywiście. Nawet najsilniejsze ogrody potrzebują deszczu."

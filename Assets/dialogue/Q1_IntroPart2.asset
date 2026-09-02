@@ -16,22 +16,22 @@ MonoBehaviour:
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "My tree looks so small here."
+    text: "Moje drzewko wygląda tu na takie małe."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Yes. It has been waiting for warmth for a very long time."
+    text: "Tak. Od bardzo dawna czeka na ciepło."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Can't the sun warm it on its own?"
+    text: "A słońce nie może go ogrzać samo?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "It can. But someone has to bring it closer first."
-    choiceA: "Why me? I can barely keep myself warm."
-    choiceB: "That sounds too simple."
+    text: "Może. Ale najpierw ktoś musi przynieść je bliżej."
+    choiceA: "Dlaczego ja? Ledwo starcza mi ciepła dla siebie."
+    choiceB: "To brzmi zbyt prosto."
     choiceKeyA: q1_doubt
     choiceKeyB: q1_simple
-    reactionA: "That's exactly why. Some things only begin to grow when we give them our attention. You included."
-    reactionB: "The simplest things are the ones we forget to do most often."
+    reactionA: "Właśnie dlatego. Niektóre rzeczy zaczynają rosnąć dopiero wtedy, gdy poświęcimy im uwagę. Ty też."
+    reactionB: "O najprostszych rzeczach zapominamy najczęściej."

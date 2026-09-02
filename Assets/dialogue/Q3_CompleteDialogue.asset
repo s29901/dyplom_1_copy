@@ -16,16 +16,16 @@ MonoBehaviour:
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "They all just needed someone to listen..."
+    text: "Wszystkie potrzebowały tylko tego, żeby ktoś ich wysłuchał..."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Feelings are like that. They don't want to be fixed. They want to be heard."
+    text: "Uczucia już takie są. Nie chcą, żeby je naprawiać. Chcą, żeby je usłyszeć."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Even the dark ones?"
+    text: "Nawet te ciemne?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Especially the dark ones. A feeling that has been heard can finally rest. And so can you."
+    text: "Zwłaszcza te ciemne. Uczucie, które zostało usłyszane, może wreszcie odpocząć. Ty też."

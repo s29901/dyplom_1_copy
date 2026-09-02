@@ -201,7 +201,7 @@ public class DialogueManager : MonoBehaviour
         }
         isTyping = false;
 
-        if (line.HasChoice)
+        if (line.HasChoice && !resolvedChoices.Contains(currentLineIndex))
             ShowChoices(line);
     }
 
@@ -224,9 +224,15 @@ public class DialogueManager : MonoBehaviour
     public void OnChoiceA() => SelectChoice(true);
     public void OnChoiceB() => SelectChoice(false);
 
+    // Ручная проверка ловит нажатие, а OnClick кнопки — отпускание.
+    // Игнорируем повторное срабатывание в течение 0.3 секунды.
+    private float lastChoiceTime = -1f;
+
     private void SelectChoice(bool a)
     {
         if (!choiceActive) return; // защита от двойного срабатывания (клик + onClick)
+        if (Time.unscaledTime - lastChoiceTime < 0.3f) return;
+        lastChoiceTime = Time.unscaledTime;
         var line = playlist[currentLineIndex];
         if (!line.HasChoice) return;
 
@@ -281,10 +287,14 @@ public class DialogueManager : MonoBehaviour
     }
 
     // Вызывать по клику/кнопке "продолжить"
+    private float lastAdvanceTime = -1f;
+
     public void OnAdvancePressed()
     {
         if (playlist == null || !IsDialogueActive) return;
         if (choiceActive) return; // ждём нажатия кнопки выбора
+        if (Time.unscaledTime - lastAdvanceTime < 0.15f) return;
+        lastAdvanceTime = Time.unscaledTime;
 
         var line = playlist[currentLineIndex];
 

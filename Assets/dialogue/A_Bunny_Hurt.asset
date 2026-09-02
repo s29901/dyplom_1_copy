@@ -16,14 +16,14 @@ MonoBehaviour:
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "They forgot about me. They always forget. It was so long ago... so why does it still sting?"
-    choiceA: "That really hurt, didn't it?"
-    choiceB: "Just forget about it. It's in the past."
+    text: "Zapomnieli o mnie. Zawsze zapominają. To było tak dawno... więc dlaczego wciąż piecze?"
+    choiceA: "To naprawdę zabolało, prawda?"
+    choiceB: "Po prostu zapomnij. To już przeszłość."
     choiceKeyA: a_hurt_listen
     choiceKeyB: a_hurt_fix
-    reactionA: "Yes. It did. Thank you for not pretending it didn't."
-    reactionB: "I tried forgetting. Every day. It doesn't work. A hurt needs to be heard before it can leave."
+    reactionA: "Tak. Zabolało. Dziękuję, że nie udajesz, że było inaczej."
+    reactionB: "Próbowałem zapominać. Codziennie. To nie działa. Żal musi zostać wysłuchany, zanim odejdzie."
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "Maybe the sting fades once somebody knows about it. It already stings a little less."
+    text: "Może pieczenie mija, kiedy ktoś już o nim wie. Piecze już trochę mniej."

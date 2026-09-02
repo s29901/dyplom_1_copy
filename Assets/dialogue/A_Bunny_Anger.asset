@@ -16,14 +16,14 @@ MonoBehaviour:
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "Go away! ...No. Stay. I don't know! Everything is UNFAIR and nobody cares!"
-    choiceA: "You sound really angry."
-    choiceB: "Calm down, it's not a big deal."
+    text: "Odejdź! ...Nie. Zostań. Nie wiem! Wszystko jest NIESPRAWIEDLIWE i nikogo to nie obchodzi!"
+    choiceA: "Brzmisz na naprawdę wściekłego."
+    choiceB: "Uspokój się, to nic takiego."
     choiceKeyA: a_anger_listen
     choiceKeyB: a_anger_fix
-    reactionA: "I AM angry! And... it feels good that someone finally just sees it. Without flinching."
-    reactionB: "Telling me to calm down has never calmed anyone in the history of ever. Just let me be angry for one minute."
+    reactionA: "BO JESTEM wściekły! I... dobrze mi z tym, że ktoś to w końcu po prostu widzi. I nie ucieka wzrokiem."
+    reactionB: "„Uspokój się” jeszcze nikogo w dziejach świata nie uspokoiło. Pozwól mi po prostu przez chwilę być wściekłym."
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "...The fire got smaller. It does that, when it's allowed to burn for a bit. Thank you for not running away."
+    text: "...Ogień zrobił się mniejszy. Tak już z nim jest, kiedy wolno mu chwilę popalić. Dziękuję, że nie uciekasz."

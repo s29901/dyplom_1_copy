@@ -16,38 +16,38 @@ MonoBehaviour:
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "You're here. I was starting to think you'd never come back."
+    text: "Jesteś. Zaczynało mi się już wydawać, że nigdy nie wrócisz."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Back? I've never been here before."
+    text: "Wrócę? Przecież nigdy mnie tu nie było."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "You have. A long time ago. This is your garden."
+    text: "Było. Dawno temu. To twój ogród."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Mine? But it's all... broken."
+    text: "Mój? Ale tu wszystko jest... połamane."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Nobody took care of it when it needed care most. That wasn't your fault. But you're the only one who can bring it back now."
+    text: "Nikt się nim nie zaopiekował wtedy, kiedy najbardziej tego potrzebował. To nie była twoja wina. Ale teraz tylko ty możesz przywrócić go do życia."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "I don't know how to fix anything."
+    text: "Nie umiem niczego naprawiać."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Nobody does, at first. See that little tree? It's still alive. That's enough to start."
-    choiceA: "And if I fail?"
-    choiceB: "It's just one small tree."
+    text: "Na początku nikt nie umie. Widzisz to małe drzewko? Wciąż żyje. To wystarczy, żeby zacząć."
+    choiceA: "A jeśli mi się nie uda?"
+    choiceB: "To tylko jedno małe drzewko."
     choiceKeyA: intro_fail
     choiceKeyB: intro_smalltree
-    reactionA: "Then we'll try again. Gardens are patient."
-    reactionB: "Every garden begins with a single tree. Don't underestimate it."
+    reactionA: "To spróbujemy jeszcze raz. Ogrody są cierpliwe."
+    reactionB: "Każdy ogród zaczyna się od jednego drzewa. Nie lekceważ go."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "...Okay. Show me."
+    text: "...Dobrze. Pokaż mi."

@@ -1676,6 +1676,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialoguePanel
       objectReference: {fileID: 0}
+    - target: {fileID: 8722710201641264435, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 167
+      objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1742,7 +1746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -741
+      value: -537
       objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1930,7 +1934,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 1294411823}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 269144365}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59f8c68d1330b4714beb8844411eaaae, type: 3}
   m_Name: 
@@ -1977,6 +1981,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de3ef13d496d546f2bf436fd05c4b014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeroSpawn
+  stepAwayFromPortal: 1.5
 --- !u!1 &650113495
 GameObject:
   m_ObjectHideFlags: 0
@@ -6151,7 +6156,7 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.37012002}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.7447694}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7505,7 +7510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The sprout felt the warmth
+  m_text: "Kie\u0142ek poczu\u0142 ciep\u0142o"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}
   m_sharedMaterial: {fileID: -2807416022155970976, guid: 60f514b43ad7c4745894f6ba18f6a213, type: 2}

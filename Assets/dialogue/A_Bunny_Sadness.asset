@@ -16,14 +16,14 @@ MonoBehaviour:
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "Oh... don't look at me. I'm just sad. Today. And yesterday. And the day before that."
-    choiceA: "Do you want to tell me about it?"
-    choiceB: "Don't be sad! Cheer up!"
+    text: "Och... nie patrz na mnie. Jestem po prostu smutny. Dzisiaj. I wczoraj. I przedwczoraj też."
+    choiceA: "Chcesz mi o tym opowiedzieć?"
+    choiceB: "Nie smuć się! Głowa do góry!"
     choiceKeyA: a_sad_listen
     choiceKeyB: a_sad_fix
-    reactionA: "...Yes. I do, actually. Nobody ever asks."
-    reactionB: "'Cheer up' never works. Could you just... sit with me instead? That helps."
+    reactionA: "...Tak. Właściwie chcę. Nikt nigdy nie pyta."
+    reactionB: "„Głowa do góry” nigdy nie działa. Może po prostu... posiedzisz ze mną? To pomaga."
   - speakerName: Bunny
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
-    text: "Thank you for listening. The sadness is still here... but it feels lighter when it's not a secret."
+    text: "Dziękuję ci za to, że słuchasz. Smutek wciąż tu jest... ale robi się lżejszy, kiedy przestaje być tajemnicą."

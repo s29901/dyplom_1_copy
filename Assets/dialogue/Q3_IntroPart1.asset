@@ -16,20 +16,20 @@ MonoBehaviour:
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Do you hear the rustling? We are not alone here."
+    text: "Słyszysz ten szelest? Nie jesteśmy tu sami."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Something small is hiding in the grass... They all look so unhappy."
+    text: "Coś małego chowa się w trawie... Wszystkie wyglądają na takie nieszczęśliwe."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "These are the feelings that were never allowed to stay. Sadness. Anger. Tiredness. Fear. Hurt."
+    text: "To uczucia, którym nigdy nie pozwolono zostać. Smutek. Złość. Zmęczenie. Strach. Żal."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "Why do they live here?"
+    text: "Dlaczego tu mieszkają?"
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "When a feeling is pushed away, it doesn't disappear. It finds a quiet place... and waits."
+    text: "Kiedy odsuwamy od siebie uczucie, ono nie znika. Znajduje sobie ciche miejsce... i czeka."

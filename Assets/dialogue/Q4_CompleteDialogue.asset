@@ -16,16 +16,16 @@ MonoBehaviour:
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "See? The world didn't fall apart while you rested."
+    text: "Widzisz? Świat się nie rozpadł od tego odpoczynku."
   - speakerName: Hero
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
-    text: "...I forgot this was allowed."
+    text: "...Zupełnie wyleciało mi z głowy, że tak można."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "It always was. And it always will be."
+    text: "Zawsze było można. I zawsze będzie."
   - speakerName: Bird
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
-    text: "Now come. Let's go back to your garden. It has something to show you."
+    text: "Chodź. Wracamy do twojego ogrodu. Ma ci coś do pokazania."

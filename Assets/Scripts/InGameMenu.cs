@@ -100,17 +100,15 @@ public class InGameMenu : MonoBehaviour
 
     public void NextLanguage()
     {
-        int i = PlayerPrefs.GetInt(OptionsPanel.LangKey, 0);
-        i = (i + 1) % OptionsPanel.Languages.Length;
-        PlayerPrefs.SetInt(OptionsPanel.LangKey, i);
-        PlayerPrefs.Save();
+        if (!OncePerFrame()) return;
+        Loc.Next();
         RefreshLanguageLabel();
     }
 
     private void RefreshLanguageLabel()
     {
         if (languageLabel != null)
-            languageLabel.text = "Language: " + OptionsPanel.CurrentLanguage;
+            languageLabel.text = Loc.UI("Language") + ": " + Loc.CurrentName;
     }
 
     private void BindSliders()
@@ -136,9 +134,25 @@ public class InGameMenu : MonoBehaviour
 
     // ---------- Публичные методы (можно вешать на кнопки вручную) ----------
 
+    // Открыта ли панель настроек
+    public bool OptionsOpen => optionsBox != null && optionsBox.activeSelf;
+
+    // Защита от двойного срабатывания: ручная проверка ловит нажатие,
+    // а обычный OnClick кнопки — отпускание, и это разные кадры.
+    // Поэтому игнорируем повторные срабатывания в течение 0.3 секунды.
+    private float lastActionTime = -1f;
+    private bool OncePerFrame()
+    {
+        float now = Time.unscaledTime;
+        if (now - lastActionTime < 0.3f) return false;
+        lastActionTime = now;
+        return true;
+    }
+
     public void Toggle()
     {
         if (menuPanel == null) return;
+        if (!OncePerFrame()) return;
         if (menuPanel.activeSelf) Close(); else Open();
     }
 
@@ -150,6 +164,7 @@ public class InGameMenu : MonoBehaviour
 
     public void Close()
     {
+        if (!OncePerFrame()) return;
         if (menuPanel != null) menuPanel.SetActive(false);
         if (optionsBox != null) optionsBox.SetActive(false);
         if (pauseGame) Time.timeScale = 1f;
@@ -157,11 +172,14 @@ public class InGameMenu : MonoBehaviour
 
     public void ToggleOptions()
     {
+        if (!OncePerFrame()) return;
         if (optionsBox != null) optionsBox.SetActive(!optionsBox.activeSelf);
     }
 
     public void GoToMainMenu()
     {
+        if (OptionsOpen) return;   // пока открыты настройки — выход недоступен
+        if (!OncePerFrame()) return;
         Time.timeScale = 1f;
         if (menuPanel != null) menuPanel.SetActive(false);
         SceneTransition.Load(mainMenuScene);
@@ -182,7 +200,46 @@ public class InGameMenu : MonoBehaviour
     private void Update()
     {
         if (escapeToggles && Input.GetKeyDown(KeyCode.Escape))
+        {
             Toggle();
+            return;
+        }
+
+        // Запасной путь: ловим клик по прямоугольнику кнопки сами.
+        // Работает, даже если сверху лежит другой канвас или картинка.
+        if (!Input.GetMouseButtonDown(0)) return;
+
+        bool panelOpen = menuPanel != null && menuPanel.activeSelf;
+
+        if (!panelOpen)
+        {
+            if (PointerOver(menuIcon)) Toggle();
+            return;
+        }
+
+        if (OptionsOpen)                       // за настройками кнопки недоступны
+        {
+            if (PointerOver(languageButton)) NextLanguage();
+            return;
+        }
+
+        if (PointerOver(resumeButton)) { Close(); return; }
+        if (PointerOver(optionsButton)) { ToggleOptions(); return; }
+        if (PointerOver(mainMenuButton)) { GoToMainMenu(); return; }
+    }
+
+    private bool PointerOver(Component c)
+    {
+        if (c == null || !c.gameObject.activeInHierarchy) return false;
+
+        var rt = c.GetComponent<RectTransform>();
+        if (rt == null) return false;
+
+        var canvas = rt.GetComponentInParent<Canvas>();
+        Camera cam = (canvas != null && canvas.renderMode != RenderMode.ScreenSpaceOverlay)
+            ? canvas.worldCamera : null;
+
+        return RectTransformUtility.RectangleContainsScreenPoint(rt, Input.mousePosition, cam);
     }
 
     private void OnDestroy()

@@ -21,12 +21,11 @@ public class OptionsPanel : MonoBehaviour
     public Button languageButton;      // кнопка-переключатель
     public TMP_Text languageLabel;     // текст на кнопке
 
-    // Пока в игре один язык; список готов к расширению
-    public static readonly string[] Languages = { "English" };
-    public const string LangKey = "language";
+    // Языки игры (см. Loc)
+    public static string[] Languages => Loc.Names;
+    public const string LangKey = Loc.Key;
 
-    public static string CurrentLanguage =>
-        Languages[Mathf.Clamp(PlayerPrefs.GetInt(LangKey, 0), 0, Languages.Length - 1)];
+    public static string CurrentLanguage => Loc.CurrentName;
 
     private void OnEnable()
     {
@@ -95,17 +94,14 @@ public class OptionsPanel : MonoBehaviour
 
     public void NextLanguage()
     {
-        int i = PlayerPrefs.GetInt(LangKey, 0);
-        i = (i + 1) % Languages.Length;   // пока язык один — значение не меняется
-        PlayerPrefs.SetInt(LangKey, i);
-        PlayerPrefs.Save();
+        Loc.Next();              // переключает язык и уведомляет интерфейс
         RefreshLanguageLabel();
     }
 
     private void RefreshLanguageLabel()
     {
         if (languageLabel != null)
-            languageLabel.text = "Language: " + CurrentLanguage;
+            languageLabel.text = Loc.UI("Language") + ": " + CurrentLanguage;
     }
 
     private static void UpdateLabel(TMP_Text label, float value01)
