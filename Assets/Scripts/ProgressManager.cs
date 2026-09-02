@@ -37,6 +37,47 @@ public class ProgressManager : MonoBehaviour
         }
         PlayerPrefs.SetInt("quest" + number, 1);
         PlayerPrefs.Save();
+        Debug.Log($"[Прогресс] Квест {number} пройден. Всего: {QuestsCompleted()}/4");
+    }
+
+    // Подстраховка: сохраняем при сворачивании и выходе из игры
+    private void OnApplicationPause(bool paused) { if (paused) PlayerPrefs.Save(); }
+    private void OnApplicationQuit() { PlayerPrefs.Save(); }
+
+    // Полный сброс прогресса для «Новой игры».
+    // Стирает только игровые ключи — громкость и язык остаются.
+    public static void ResetProgress()
+    {
+        for (int i = 1; i <= 4; i++)
+            PlayerPrefs.DeleteKey("quest" + i);
+
+        // просмотренные катсцены и разговоры
+        foreach (var key in new[]
+        {
+            "cutscene_q1_intro", "cutscene_q2_intro", "cutscene_q3_intro", "cutscene_q4_intro",
+            "dlg_hub_bird_intro", "dlg_hub_bird_intro_final"
+        })
+            PlayerPrefs.DeleteKey(key);
+
+        // сделанные в диалогах выборы
+        foreach (var key in new[]
+        {
+            "intro_fail", "intro_smalltree", "q1_doubt", "q1_simple",
+            "q2_silent", "q2_admit", "q3_wrongwords", "q3_try",
+            "q4_dontknow", "q4_waste",
+            "a_sad_listen", "a_sad_fix", "a_anger_listen", "a_anger_fix",
+            "a_tired_listen", "a_tired_fix", "a_fear_listen", "a_fear_fix",
+            "a_hurt_listen", "a_hurt_fix"
+        })
+            PlayerPrefs.DeleteKey("choice_" + key);
+
+        PlayerPrefs.Save();
+
+        if (Instance != null)
+        {
+            Instance.quest1Done = Instance.quest2Done =
+            Instance.quest3Done = Instance.quest4Done = false;
+        }
     }
 
     void Awake()

@@ -5,19 +5,19 @@ public class CloudDrag : MonoBehaviour
 {
     public enum PatrolPath
     {
-        Ellipse,   // овал (как было, но со своей фазой)
+        Circle,    // ровный круг вокруг исходной точки
         Figure8,   // восьмёрка
         Wander,    // свободное блуждание (шум Перлина)
         LineX      // покачивание только влево-вправо
     }
 
     [Header("Траектория патруля")]
-    [SerializeField] private PatrolPath patrolPath = PatrolPath.Ellipse;
+    [SerializeField] private PatrolPath patrolPath = PatrolPath.Circle;
     [Tooltip("Выбрать траекторию и параметры случайно — облака полетят по-разному")]
     [SerializeField] private bool randomizePatrol = true;
 
-    [SerializeField] private float patrolSpeed = 1f;    // prędkość patrolu
-    [SerializeField] private float patrolRange = 2f;    // szerokość kołysania
+    [SerializeField] private float patrolSpeed = 0.35f; // скорость обхода круга (меньше = спокойнее)
+    [SerializeField] private float patrolRange = 0.6f;  // радиус круга
     [SerializeField] private float rainDuration = 3f;   // sekund przebywania nad drzewem
     [SerializeField] private Transform tree;             // дерево (запасной вариант с радиусом)
     [SerializeField] private float treeRadius = 2f;     // радиус, если зона не задана
@@ -37,8 +37,37 @@ public class CloudDrag : MonoBehaviour
     // Informujemy QuestManager, kiedy chmura skończy padać
     public System.Action OnCloudDone;
 
+    [Header("Отладка дождя (писать в Console)")]
+    [SerializeField] private bool debugRain = true;
+
+    // Печатает всё, что влияет на видимость дождя
+    private void LogRainState()
+    {
+        var sr = rainObject.GetComponentInChildren<SpriteRenderer>(true);
+        var anim = rainObject.GetComponentInChildren<Animator>(true);
+
+        string s = $"[Дождь] облако '{name}' -> объект '{rainObject.name}' включён.\n";
+        s += $"   позиция: {rainObject.transform.position}, масштаб: {rainObject.transform.lossyScale}\n";
+
+        if (sr == null) s += "   ❌ SpriteRenderer не найден\n";
+        else s += $"   рендерер: включён={sr.enabled}, спрайт={(sr.sprite ? sr.sprite.name : "НЕТ")}, " +
+                  $"альфа={sr.color.a:0.00}, слой='{sr.sortingLayerName}', порядок={sr.sortingOrder}, виден камерой={sr.isVisible}\n";
+
+        if (anim == null) s += "   ❌ Animator не найден";
+        else s += $"   аниматор: включён={anim.enabled}, контроллер={(anim.runtimeAnimatorController ? anim.runtimeAnimatorController.name : "НЕТ")}, скорость={anim.speed}";
+
+        Debug.Log(s, rainObject);
+    }
+
     void Start()
     {
+        // Квест уже пройден — облака своё отработали и больше не появляются
+        if (ProgressManager.Instance != null && ProgressManager.Instance.quest2Done)
+        {
+            gameObject.SetActive(false);
+            return;
+        }
+
         startPosition = transform.position;
         dragPlane = new Plane(Vector3.up, new Vector3(0, transform.position.y, 0));
         if (rainObject != null) rainObject.SetActive(false);
@@ -46,10 +75,9 @@ public class CloudDrag : MonoBehaviour
         // Своя траектория и свой ритм у каждого облака
         if (randomizePatrol)
         {
-            patrolPath = (PatrolPath)Random.Range(0, 4);
-            patrolSpeed *= Random.Range(0.6f, 1.5f);
-            patrolRange *= Random.Range(0.7f, 1.4f);
-            if (Random.value < 0.5f) patrolSpeed = -patrolSpeed; // половина летит в другую сторону
+            patrolSpeed *= Random.Range(0.7f, 1.3f);   // у каждого свой темп
+            patrolRange *= Random.Range(0.75f, 1.25f); // и свой радиус
+            if (Random.value < 0.5f) patrolSpeed = -patrolSpeed; // кто-то по часовой, кто-то против
         }
         patrolAngle = Random.Range(0f, Mathf.PI * 2f); // разная начальная фаза
         noiseSeed = Random.Range(0f, 100f);
@@ -99,11 +127,11 @@ public class CloudDrag : MonoBehaviour
                 offset = new Vector3(Mathf.Sin(patrolAngle) * patrolRange, 0, 0);
                 break;
 
-            default: // Ellipse
+            default: // Circle — ровный круг вокруг точки расстановки
                 offset = new Vector3(
                     Mathf.Sin(patrolAngle) * patrolRange,
                     0,
-                    Mathf.Cos(patrolAngle * 0.7f) * patrolRange * 0.5f);
+                    Mathf.Cos(patrolAngle) * patrolRange);
                 break;
         }
 
@@ -142,7 +170,16 @@ public class CloudDrag : MonoBehaviour
         if (inRainZone)
         {
             // Deszcz pada
-            if (rainObject != null) rainObject.SetActive(true);
+            if (rainObject != null)
+            {
+                bool wasOff = !rainObject.activeSelf;
+                rainObject.SetActive(true);
+                if (wasOff && debugRain) LogRainState();
+            }
+            else if (debugRain)
+            {
+                Debug.LogWarning($"[Дождь] У облака '{name}' не назначен rainObject!");
+            }
             rainProgress += Time.deltaTime;
             if (rainProgress >= rainDuration)
             {

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 // Повесить на объект NPC вместе с Collider2D или Collider.
@@ -105,6 +106,7 @@ public class BirdInteraction : MonoBehaviour
             {
                 MarkPlayed(dialogueId + "_final");
                 DialogueManager.Instance.StartDialogue(finalDialogue);
+                StartCoroutine(PlayFinalAnimationAfterDialogue());
                 return;
             }
             if (finalRepeatDialogue != null)
@@ -116,5 +118,21 @@ public class BirdInteraction : MonoBehaviour
 
         if (repeatDialogue != null)
             DialogueManager.Instance.StartDialogue(repeatDialogue);
+    }
+
+    // Ждём конца финального диалога и запускаем финальную анимацию
+    private IEnumerator PlayFinalAnimationAfterDialogue()
+    {
+        var dm = DialogueManager.Instance;
+        yield return null;
+        while (dm != null && dm.IsDialogueActive)
+            yield return null;
+
+        var final = FindFirstObjectByType<FinalAnimation>(FindObjectsInactive.Include);
+        if (final != null)
+        {
+            final.gameObject.SetActive(true);
+            final.Play();
+        }
     }
 }

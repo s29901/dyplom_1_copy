@@ -71,25 +71,16 @@ public class MainMenu : MonoBehaviour
     // Кнопка "Start" на панели имени
     public void OnConfirmName()
     {
-        // Сбрасываем весь прогресс (громкость сохраняем)
-        float volume = PlayerPrefs.GetFloat("volume", 1f);
-        PlayerPrefs.DeleteAll();
-        PlayerPrefs.SetFloat("volume", volume);
-
+        // Сначала проверяем имя и только потом что-либо стираем
         string playerName = nameInput != null ? nameInput.text.Trim() : "Hero";
         if (string.IsNullOrEmpty(playerName)) return; // без имени не начинаем
+
+        // Сброс прогресса: громкость, язык и другие настройки сохраняются
+        ProgressManager.ResetProgress();
+
         PlayerPrefs.SetString("player_name", playerName);
         PlayerPrefs.SetInt("game_started", 1);
         PlayerPrefs.Save();
-
-        // Если ProgressManager уже жив с прошлой игры — обнуляем его
-        if (ProgressManager.Instance != null)
-        {
-            ProgressManager.Instance.quest1Done = false;
-            ProgressManager.Instance.quest2Done = false;
-            ProgressManager.Instance.quest3Done = false;
-            ProgressManager.Instance.quest4Done = false;
-        }
 
         SceneTransition.Load(firstSceneName);
     }

@@ -50,6 +50,14 @@ public class Q1Cutscene : MonoBehaviour
         if (played && onlyOnce)
         {
             IntroFinished = true; // интро уже показывали ранее
+
+            // Страховка: вернуть управление и интерактив, если они остались выключены
+            if (heroMovement != null) heroMovement.enabled = true;
+            if (sunCollider != null) sunCollider.enabled = true;
+
+            bool questDone = ProgressManager.Instance != null &&
+                             ProgressManager.Instance.quest1Done;
+            if (warmthBar != null) warmthBar.SetActive(!questDone);
             yield break;
         }
         played = true;

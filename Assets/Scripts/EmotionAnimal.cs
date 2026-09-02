@@ -47,8 +47,19 @@ public class EmotionAnimal : MonoBehaviour
     void Start()
     {
         sr = GetComponentInChildren<SpriteRenderer>();
-        if (sr != null && sadSprite != null) sr.sprite = sadSprite;
         PickNewTarget();
+
+        // Квест уже пройден — зверёк сразу спокойный, разговор не нужен
+        bool questDone = ProgressManager.Instance != null &&
+                         ProgressManager.Instance.quest3Done;
+        if (questDone)
+        {
+            Heard = true;
+            if (sr != null && calmSprite != null) sr.sprite = calmSprite;
+            return;
+        }
+
+        if (sr != null && sadSprite != null) sr.sprite = sadSprite;
     }
 
     void Update()
