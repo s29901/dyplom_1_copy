@@ -13,7 +13,8 @@ public class FinalAnimation : MonoBehaviour
     [Header("Картинки (пусто = все дочерние Image по порядку)")]
     public Image[] pictures;
 
-    [Header("Вспышка")]
+    [Header("Вспышка (выключена — картинки просто проявляются)")]
+    public bool useFlash = false;
     [Tooltip("Белый прямоугольник на весь экран. Пусто — создастся сам")]
     public Image flash;
     public Color flashColor = Color.white;
@@ -48,7 +49,21 @@ public class FinalAnimation : MonoBehaviour
         HideAll();
         EnsureFlash();
 
-        if (buttonsRoot != null) buttonsRoot.SetActive(false);
+        SetButtonsVisible(false);
+    }
+
+    // Объекты кнопок: либо общий контейнер, либо сами кнопки
+    private IEnumerable<GameObject> ButtonObjects()
+    {
+        if (buttonsRoot != null) { yield return buttonsRoot; yield break; }
+        if (backButton != null) yield return backButton.gameObject;
+        if (mainMenuButton != null) yield return mainMenuButton.gameObject;
+    }
+
+    private void SetButtonsVisible(bool visible)
+    {
+        foreach (var go in ButtonObjects())
+            if (go != null) go.SetActive(visible);
     }
 
     // Находит кнопки по именам, если они не назначены вручную
@@ -90,7 +105,9 @@ public class FinalAnimation : MonoBehaviour
         foreach (Transform child in transform)
         {
             var img = child.GetComponent<Image>();
-            if (img != null && img != flash) list.Add(img);
+            if (img == null || img == flash) continue;
+            if (child.GetComponent<Button>() != null) continue;   // кнопки — не картинки
+            list.Add(img);
         }
         pictures = list.ToArray();
     }
@@ -143,17 +160,25 @@ public class FinalAnimation : MonoBehaviour
         {
             if (pic == null) continue;
 
-            // вспышка нарастает
+            // звук появления
             if (!string.IsNullOrEmpty(flashSfx)) AudioManager.PlaySfx(flashSfx);
-            yield return FadeImage(flash, 0f, 1f, flashIn);
 
-            // на пике вспышки включаем картинку
-            pic.gameObject.SetActive(true);
-            SetAlpha(pic, 0f);
+            if (useFlash)
+            {
+                yield return FadeImage(flash, 0f, 1f, flashIn);   // вспышка нарастает
 
-            // вспышка гаснет, картинка проявляется
-            StartCoroutine(FadeImage(pic, 0f, 1f, pictureFadeIn));
-            yield return FadeImage(flash, 1f, 0f, flashOut);
+                pic.gameObject.SetActive(true);                    // на пике включаем картинку
+                SetAlpha(pic, 0f);
+
+                StartCoroutine(FadeImage(pic, 0f, 1f, pictureFadeIn));
+                yield return FadeImage(flash, 1f, 0f, flashOut);  // вспышка гаснет
+            }
+            else
+            {
+                pic.gameObject.SetActive(true);                    // просто мягкое проявление
+                SetAlpha(pic, 0f);
+                yield return FadeImage(pic, 0f, 1f, pictureFadeIn);
+            }
 
             yield return new WaitForSeconds(delayBetween);
         }
@@ -166,20 +191,28 @@ public class FinalAnimation : MonoBehaviour
 
     private IEnumerator ShowButtons()
     {
-        if (buttonsRoot == null) yield break;
+        var groups = new List<CanvasGroup>();
 
-        buttonsRoot.SetActive(true);
+        foreach (var go in ButtonObjects())
+        {
+            if (go == null) continue;
+            go.SetActive(true);
 
-        var group = buttonsRoot.GetComponent<CanvasGroup>();
-        if (group == null) group = buttonsRoot.AddComponent<CanvasGroup>();
+            var g = go.GetComponent<CanvasGroup>();
+            if (g == null) g = go.AddComponent<CanvasGroup>();
+            g.alpha = 0f;
+            groups.Add(g);
+        }
 
-        group.alpha = 0f;
+        if (groups.Count == 0) yield break;
+
         for (float t = 0f; t < buttonsFadeIn; t += Time.deltaTime)
         {
-            group.alpha = t / buttonsFadeIn;
+            float a = t / buttonsFadeIn;
+            foreach (var g in groups) g.alpha = a;
             yield return null;
         }
-        group.alpha = 1f;
+        foreach (var g in groups) g.alpha = 1f;
     }
 
     private IEnumerator FadeImage(Image img, float from, float to, float time)
