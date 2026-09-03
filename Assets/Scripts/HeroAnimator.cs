@@ -24,6 +24,11 @@ public class HeroAnimator : MonoBehaviour
     [Header("Настройки")]
     public float frameRate = 10f;          // кадров в секунду
     public float moveThreshold = 0.02f;    // ниже этой скорости считаем, что стоит
+
+    [Range(0f, 1f)]
+    [Tooltip("Насколько одна ось должна перевешивать другую, чтобы сменить направление. " +
+             "Больше значение — увереннее держится текущий набор кадров на диагонали.")]
+    public float directionBias = 0.35f;
     [Tooltip("В какую сторону смотрит героиня на кадрах профиля. " +
              "Если в игре она идёт спиной вперёд — переключи эту галочку.")]
     public bool sideFacesRight = false;
@@ -70,18 +75,35 @@ public class HeroAnimator : MonoBehaviour
 
     private bool wasMoving;
 
-    // Куда смотрит герой: вбок, к камере или от камеры
+    // Куда смотрит герой: вбок, к камере или от камеры.
+    //
+    // На диагонали |dx| и |dz| почти равны, поэтому направление меняется
+    // только когда одна ось заметно перевешивает другую (directionBias).
+    // Иначе набор кадров дёргался бы каждый кадр.
     private void UpdateDirection(Vector3 delta)
     {
-        if (Mathf.Abs(delta.x) > Mathf.Abs(delta.z))
+        float x = Mathf.Abs(delta.x);
+        float z = Mathf.Abs(delta.z);
+        float margin = 1f + Mathf.Max(directionBias, 0f);
+
+        if (dir == Dir.Side)
         {
-            dir = Dir.Side;
-            faceLeft = delta.x < 0f;
+            // уходим из профиля, только если глубина явно преобладает
+            if (z > x * margin)
+                dir = delta.z < 0f ? Dir.Front : Dir.Back;
         }
         else
         {
-            dir = delta.z < 0f ? Dir.Front : Dir.Back;  // -Z = к камере
+            // переходим в профиль, только если горизонталь явно преобладает
+            if (x > z * margin)
+                dir = Dir.Side;
+            else
+                dir = delta.z < 0f ? Dir.Front : Dir.Back;  // -Z = к камере
         }
+
+        // сторону профиля обновляем всегда, пока есть горизонтальное движение
+        if (Mathf.Abs(delta.x) > 0.0001f)
+            faceLeft = delta.x < 0f;
     }
 
     private void Animate(bool moving)
