@@ -1329,7 +1329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3129215167180385216, guid: adbb0bb837b27436ab6a8ca3861c57b1, type: 3}
       propertyPath: m_text
-      value: Project Supervisors
+      value: "Prowadz\u0105ce"
       objectReference: {fileID: 0}
     - target: {fileID: 3129215167180385216, guid: adbb0bb837b27436ab6a8ca3861c57b1, type: 3}
       propertyPath: m_margin.z
@@ -1410,6 +1410,10 @@ PrefabInstance:
     - target: {fileID: 7254950524225927929, guid: adbb0bb837b27436ab6a8ca3861c57b1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -482
+      objectReference: {fileID: 0}
+    - target: {fileID: 7911703530979420669, guid: adbb0bb837b27436ab6a8ca3861c57b1, type: 3}
+      propertyPath: m_text
+      value: CREDITS
       objectReference: {fileID: 0}
     - target: {fileID: 7911703530979420669, guid: adbb0bb837b27436ab6a8ca3861c57b1, type: 3}
       propertyPath: m_fontAsset
@@ -3217,7 +3221,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "tw\xF3rcy"
+  m_text: Credits
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
   m_sharedMaterial: {fileID: -1093805761633924218, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}

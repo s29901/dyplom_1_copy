@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A_Bunny_Anger
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Odejdź! ...Nie. Zostań. Nie wiem! Wszystko jest NIESPRAWIEDLIWE i nikogo to nie obchodzi!"
@@ -23,7 +23,7 @@ MonoBehaviour:
     choiceKeyB: a_anger_fix
     reactionA: "BO JESTEM wściekły! I... dobrze mi z tym, że ktoś to w końcu po prostu widzi. I nie ucieka wzrokiem."
     reactionB: "„Uspokój się” jeszcze nikogo w dziejach świata nie uspokoiło. Pozwól mi po prostu przez chwilę być wściekłym."
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "...Ogień zrobił się mniejszy. Tak już z nim jest, kiedy wolno mu chwilę popalić. Dziękuję, że nie uciekasz."

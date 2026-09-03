@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A_Bunny_Fear
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "N-nie podchodź bliżej! ...Nie, czekaj. Nie odchodź. Nigdy nie wiem, czego właściwie chcę."
@@ -23,7 +23,7 @@ MonoBehaviour:
     choiceKeyB: a_fear_fix
     reactionA: "Ty... nie śmiejesz się ze mnie? Strach robi się mniejszy, kiedy ktoś przy nim zostaje."
     reactionB: "Ale ja się boję. Kiedy mówisz, że to nic, wciąż się boję — tylko już całkiem sam."
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Wciąż trochę się boję. Ale to już nie jest ten samotny strach. To co innego. To lepsze."

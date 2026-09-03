@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Q3_BirdBeforeQuest
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Ta cisza to nie spokój. Wsłuchaj się uważniej."

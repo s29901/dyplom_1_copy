@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A_Bunny_Hurt
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Zapomnieli o mnie. Zawsze zapominają. To było tak dawno... więc dlaczego wciąż piecze?"
@@ -23,7 +23,7 @@ MonoBehaviour:
     choiceKeyB: a_hurt_fix
     reactionA: "Tak. Zabolało. Dziękuję, że nie udajesz, że było inaczej."
     reactionB: "Próbowałem zapominać. Codziennie. To nie działa. Żal musi zostać wysłuchany, zanim odejdzie."
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Może pieczenie mija, kiedy ktoś już o nim wie. Piecze już trochę mniej."

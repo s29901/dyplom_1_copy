@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: EndingDialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Spójrz na swoje drzewo."
@@ -21,26 +21,26 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Jest teraz takie wysokie... Kiedy to się stało?"
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Wtedy, kiedy nikt nie patrzył. Tak właśnie rosną rzeczy."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Pamiętasz to pytanie: a jeśli mi się nie uda? Odpowiedź nigdy nie była ci potrzebna."
     requiredChoiceKey: intro_fail
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Kiedyś było to „tylko jedno małe drzewko”. Spójrz na nie teraz."
     requiredChoiceKey: intro_smalltree
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "I ani jedno twoje słowo nie okazało się tym niewłaściwym. Wystarczyła sama twoja obecność."
     requiredChoiceKey: q3_wrongwords
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Odpoczynek wydawał ci się stratą czasu. A jednak jesteśmy tutaj."
@@ -49,11 +49,11 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Czy z ogrodem będzie dobrze, kiedy odejdę?"
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Nigdzie nie odchodzisz. To twój ogród. Jest z tobą wszędzie."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Będą tu dni deszczowe. Będą dni chłodne. Ale teraz już wiesz, co robić."
@@ -61,7 +61,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Wracać. Przynosić ciepło. Pozwalać deszczowi padać. Mówić. Odpoczywać."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "A ja tu będę. Za każdym razem."

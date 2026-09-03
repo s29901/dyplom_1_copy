@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Q1_IntroPart1
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Czujesz to?"
@@ -21,7 +21,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Chłód. Tak. Wydawało mi się, że to tylko ja."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "To nie tylko ty. To całe to miejsce."
@@ -29,7 +29,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Ale przecież świeci słońce..."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Czasem samo światło nie wystarczy."

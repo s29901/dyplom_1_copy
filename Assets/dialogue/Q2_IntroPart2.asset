@@ -17,7 +17,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Ta wygląda jeszcze słabiej niż poprzednia."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Od bardzo dawna jest spragniona."
@@ -25,7 +25,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "To dlaczego nie pada?"
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Bo te chmury wciąż wszystko w sobie trzymają."
@@ -33,7 +33,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Trzymają? Co takiego?"
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Łzy, którym nigdy nie pozwolono spaść."
@@ -45,11 +45,11 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Czy łzy naprawdę mogą pomóc czemuś rosnąć?"
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Czasem... Łzy, które ukrywamy, zamieniają się w burze w środku. Łzy, którym pozwalamy płynąć, zamieniają się w deszcz."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Pomożesz tej małej roślince?"

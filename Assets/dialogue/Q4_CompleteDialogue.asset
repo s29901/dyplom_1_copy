@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Q4_CompleteDialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Widzisz? Świat się nie rozpadł od tego odpoczynku."
@@ -21,11 +21,11 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "...Zupełnie wyleciało mi z głowy, że tak można."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Zawsze było można. I zawsze będzie."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Chodź. Wracamy do twojego ogrodu. Ma ci coś do pokazania."

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A_Bunny_Sadness
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Och... nie patrz na mnie. Jestem po prostu smutny. Dzisiaj. I wczoraj. I przedwczoraj też."
@@ -23,7 +23,7 @@ MonoBehaviour:
     choiceKeyB: a_sad_fix
     reactionA: "...Tak. Właściwie chcę. Nikt nigdy nie pyta."
     reactionB: "„Głowa do góry” nigdy nie działa. Może po prostu... posiedzisz ze mną? To pomaga."
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Dziękuję ci za to, że słuchasz. Smutek wciąż tu jest... ale robi się lżejszy, kiedy przestaje być tajemnicą."

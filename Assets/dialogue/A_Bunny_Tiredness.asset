@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: A_Bunny_Tiredness
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Ledwo trzymam otwarte oczy... ale nie wolno mi przestać. Tyle jeszcze zostało do zrobienia. Zawsze zostaje tyle do zrobienia."
@@ -23,7 +23,7 @@ MonoBehaviour:
     choiceKeyB: a_tired_fix
     reactionA: "Wolno...? Nikt nigdy nie powiedział mi tego słowa."
     reactionB: "To właśnie ten pośpiech... tak mnie zmęczył. Może... może mógłbym się na chwilę zatrzymać."
-  - speakerName: Bunny
+  - speakerName: Zajączek
     speakerPortrait: {fileID: 0}
     speakerOnRight: 1
     text: "Samo powiedzenie tego na głos sprawia, że uszy robią mi się lżejsze. Może świat poczeka jeden wieczór."

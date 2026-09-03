@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IntroGardenDialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   lines:
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Jesteś. Zaczynało mi się już wydawać, że nigdy nie wrócisz."
@@ -21,7 +21,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Wrócę? Przecież nigdy mnie tu nie było."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Było. Dawno temu. To twój ogród."
@@ -29,7 +29,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Mój? Ale tu wszystko jest... połamane."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Nikt się nim nie zaopiekował wtedy, kiedy najbardziej tego potrzebował. To nie była twoja wina. Ale teraz tylko ty możesz przywrócić go do życia."
@@ -37,7 +37,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Nie umiem niczego naprawiać."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Na początku nikt nie umie. Widzisz to małe drzewko? Wciąż żyje. To wystarczy, żeby zacząć."

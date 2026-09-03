@@ -17,7 +17,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "Czekaj... tu nie ma nic do naprawienia?"
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Nie."
@@ -25,7 +25,7 @@ MonoBehaviour:
     speakerPortrait: {fileID: 21300000, guid: 328299f545de847ceacf5a3f77c61e3b, type: 3}
     speakerOnRight: 0
     text: "To co mam robić?"
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Nic. To całe zadanie."
@@ -35,7 +35,7 @@ MonoBehaviour:
     choiceKeyB: q4_waste
     reactionA: "Wiem. Dlatego tu jesteśmy."
     reactionB: "Odpoczynek nigdy nie jest stratą. Właśnie tak ogrody wracają do życia."
-  - speakerName: Bird
+  - speakerName: Ptak
     speakerPortrait: {fileID: 21300000, guid: 814c022e8e6ed4362b52687eafbba823, type: 3}
     speakerOnRight: 1
     text: "Pogoń za motylem. Albo nie goń. Nikt nie patrzy. Nikt cię nie ocenia."

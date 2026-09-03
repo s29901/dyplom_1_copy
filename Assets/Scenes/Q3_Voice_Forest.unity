@@ -5537,7 +5537,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: question
-      value: Are you ready to move on?
+      value: Chcesz ruszyć dalej?
       objectReference: {fileID: 0}
     - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: sceneName

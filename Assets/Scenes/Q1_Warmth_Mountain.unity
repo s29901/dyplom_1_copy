@@ -1746,7 +1746,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -537
+      value: -571
       objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4803,7 +4803,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: question
-      value: Are you ready to move on?
+      value: "Chcesz ruszy\u0107 dalej?"
       objectReference: {fileID: 0}
     - target: {fileID: 965832186777725681, guid: 989ccd7857e3942e8b5bd8593b559c61, type: 3}
       propertyPath: sceneName
@@ -6156,7 +6156,7 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.7447694}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.5559238}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
