@@ -35,6 +35,15 @@ public class QuestCutscene : MonoBehaviour
 
     private IEnumerator Start()
     {
+        // Поле часто забывают заполнить, а без него герой остаётся управляемым
+        // во время катсцены и дёргается: игрок и катсцена двигают его одновременно
+        if (heroMovement == null && hero != null)
+            heroMovement = hero.GetComponentInChildren<HeroMovement>();
+
+        if (heroMovement == null)
+            Debug.LogWarning("QuestCutscene: не найден HeroMovement — " +
+                             "во время катсцены герой останется под управлением игрока", this);
+
         if (oncePerGame && PlayerPrefs.GetInt("cutscene_" + cutsceneId, 0) == 1)
         {
             IntroFinished = true; // интро уже показывали — сразу обычный режим

@@ -67,15 +67,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: ikujythrgfegbhnmjk,hmjgnhbfgvdfbghnjmkyjnhfbgdvfbghnjm
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
-  m_sharedMaterial: {fileID: -1093805761633924218, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
+  m_sharedMaterial: {fileID: -1093805761633924218, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278204546
-  m_fontColor: {r: 0.50980395, g: 0.21960784, b: 0, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -379,7 +379,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 188, y: 3915}
+  m_AnchoredPosition: {x: 157, y: 3915}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3980551155897994937
@@ -666,8 +666,8 @@ MonoBehaviour:
   m_text: cgvhbjnkml,;lmknjbhvbnml,;lmknjbmj,nk.ml/,lmbgbdfvsdzcdzvfnkbjsnkcxjbh
     g
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
-  m_sharedMaterial: {fileID: -1093805761633924218, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
+  m_sharedMaterial: {fileID: -1093805761633924218, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -804,8 +804,8 @@ MonoBehaviour:
   m_text: "Nikt si\u0119 nim nie zaopiekowa\u0142 wtedy, kiedy najbardziej tego potrzebowa\u0142.
     To nie by\u0142a twoja wina. But you're the only one who can bring it back now."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
-  m_sharedMaterial: {fileID: -1093805761633924218, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
+  m_sharedMaterial: {fileID: -1093805761633924218, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

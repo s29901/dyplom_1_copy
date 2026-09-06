@@ -182,6 +182,10 @@ public class InGameMenu : MonoBehaviour
         if (!OncePerFrame()) return;
         Time.timeScale = 1f;
         if (menuPanel != null) menuPanel.SetActive(false);
+
+        // Выход в главное меню = конец прохождения: всё начинается заново
+        ProgressManager.ResetForNewGame();
+
         SceneTransition.Load(mainMenuScene);
     }
 

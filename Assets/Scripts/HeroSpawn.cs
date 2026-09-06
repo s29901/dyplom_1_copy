@@ -22,6 +22,12 @@ public class HeroSpawn : MonoBehaviour
         savedPositions[SceneManager.GetActiveScene().name] = hero.position;
     }
 
+    // Забыть все запомненные места: новая игра начинается с точек по умолчанию
+    public static void ClearSaved()
+    {
+        savedPositions.Clear();
+    }
+
     private void Start()
     {
         string scene = SceneManager.GetActiveScene().name;

@@ -15,6 +15,14 @@ public class QuestLamp : MonoBehaviour
     public Sprite offSprite;
     public Sprite onSprite;
 
+    [Header("Зажигать только после разговора с птицей")]
+    [Tooltip("Пока вступительный разговор не состоялся, все лампы погашены — " +
+             "герой может гулять, но подсказки куда идти ещё нет")]
+    public bool requireBirdTalk = true;
+
+    [Tooltip("Тот же ключ, что в Dialogue Id у BirdInteraction")]
+    public string birdDialogueId = "hub_bird_intro";
+
     [Header("Свечение (необязательно)")]
     public GameObject glowObject;      // дочерний объект: ореол, частицы, свет
 
@@ -38,6 +46,7 @@ public class QuestLamp : MonoBehaviour
     {
         sr = GetComponent<SpriteRenderer>();
         phase = Random.Range(0f, Mathf.PI * 2f); // чтобы лампы не мигали синхронно
+        if (sr != null) baseAlpha = sr.color.a;  // до того, как пульсация начнёт менять alpha
         Refresh();
     }
 
@@ -50,7 +59,14 @@ public class QuestLamp : MonoBehaviour
         {
             var s = isOn ? onSprite : offSprite;
             if (s != null) sr.sprite = s;
-            baseAlpha = sr.color.a;
+
+            // погашенная лампа не пульсирует — возвращаем исходную прозрачность
+            if (!isOn)
+            {
+                var c = sr.color;
+                c.a = baseAlpha;
+                sr.color = c;
+            }
         }
 
         if (glowObject != null && glowObject.activeSelf != isOn)
@@ -90,8 +106,30 @@ public class QuestLamp : MonoBehaviour
         else if (!isOn && lampSource.isPlaying) lampSource.Stop();
     }
 
+    // Разговор помечается пройденным в момент запуска диалога,
+    // поэтому лампа ждёт, пока панель закроется, и только тогда загорается.
+    private float birdCheckTimer;
+
+    private void WaitForBirdTalk()
+    {
+        if (!requireBirdTalk || isOn) return;
+
+        birdCheckTimer -= Time.deltaTime;
+        if (birdCheckTimer > 0f) return;
+        birdCheckTimer = 0.25f;
+
+        if (!BirdInteraction.WasPlayed(birdDialogueId)) return;
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsDialogueActive) return;
+
+        Refresh();
+    }
+
     private bool ShouldBeOn()
     {
+        // До вступительного разговора с птицей подсказок нет
+        if (requireBirdTalk && !BirdInteraction.WasPlayed(birdDialogueId))
+            return false;
+
         var pm = ProgressManager.Instance;
         if (pm == null) return questNumber == 1; // нет менеджера — светим на первый
 
@@ -113,6 +151,8 @@ public class QuestLamp : MonoBehaviour
 
     void Update()
     {
+        WaitForBirdTalk();
+
         if (!pulse || !isOn || sr == null) return;
 
         // Мягкое дыхание света

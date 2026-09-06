@@ -14,6 +14,16 @@ public class PortalTrigger : MonoBehaviour
     [SerializeField] private string lockedMessage =
         "Наверное, лучше сначала разобраться с другим местом...";
 
+    [Header("Требуется разговор с птицей")]
+    [Tooltip("Портал закрыт, пока не состоялся вступительный разговор")]
+    [SerializeField] private bool requireBirdTalk = true;
+
+    [Tooltip("Тот же ключ, что в Dialogue Id у BirdInteraction")]
+    [SerializeField] private string birdDialogueId = "hub_bird_intro";
+
+    [TextArea]
+    [SerializeField] private string birdLockedMessage = "Porozmawiaj z ptakiem";
+
     void OnTriggerEnter(Collider other)
     {
         if (!other.CompareTag("Hero") || PortalPrompt.Instance == null) return;
@@ -21,6 +31,13 @@ public class PortalTrigger : MonoBehaviour
         // Запоминаем, где герой стоит: при возвращении в эту сцену
         // он появится здесь же, у портала
         HeroSpawn.SavePosition(other.transform);
+
+        // Сначала вступительный разговор, только потом дорога дальше
+        if (!BirdTalked())
+        {
+            PortalPrompt.Instance.ShowLocked(birdLockedMessage);
+            return;
+        }
 
         if (IsUnlocked())
             PortalPrompt.Instance.Show(sceneName, question);
@@ -34,6 +51,17 @@ public class PortalTrigger : MonoBehaviour
         {
             PortalPrompt.Instance.Hide();
         }
+    }
+
+    // Разговор помечается пройденным уже при открытии панели,
+    // поэтому пока диалог на экране портал всё ещё считается закрытым
+    private bool BirdTalked()
+    {
+        if (!requireBirdTalk) return true;
+        if (!BirdInteraction.WasPlayed(birdDialogueId)) return false;
+
+        var dm = DialogueManager.Instance;
+        return dm == null || !dm.IsDialogueActive;
     }
 
     private bool IsUnlocked()

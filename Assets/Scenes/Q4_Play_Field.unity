@@ -614,6 +614,7 @@ GameObject:
   - component: {fileID: 435542930}
   - component: {fileID: 435542929}
   - component: {fileID: 435542928}
+  - component: {fileID: 435542931}
   m_Layer: 0
   m_Name: Butterfly (6)
   m_TagString: Untagged
@@ -748,6 +749,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &435542931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435542926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1 &438293970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1047,7 @@ GameObject:
   - component: {fileID: 554535267}
   - component: {fileID: 554535266}
   - component: {fileID: 554535265}
+  - component: {fileID: 554535268}
   m_Layer: 0
   m_Name: Butterfly (8)
   m_TagString: Untagged
@@ -1157,6 +1182,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &554535268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554535263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1 &563421230
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,6 +2172,7 @@ GameObject:
   - component: {fileID: 756964473}
   - component: {fileID: 756964472}
   - component: {fileID: 756964471}
+  - component: {fileID: 756964475}
   m_Layer: 0
   m_Name: Butterfly (3)
   m_TagString: Untagged
@@ -2258,6 +2307,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 81653074}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &756964475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756964470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1 &758086500
 GameObject:
   m_ObjectHideFlags: 0
@@ -2475,6 +2547,7 @@ GameObject:
   - component: {fileID: 775058955}
   - component: {fileID: 775058954}
   - component: {fileID: 775058953}
+  - component: {fileID: 775058957}
   m_Layer: 0
   m_Name: Butterfly (2)
   m_TagString: Untagged
@@ -2609,6 +2682,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 81653074}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &775058957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775058952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1 &778644431
 GameObject:
   m_ObjectHideFlags: 0
@@ -2621,6 +2717,7 @@ GameObject:
   - component: {fileID: 778644435}
   - component: {fileID: 778644434}
   - component: {fileID: 778644433}
+  - component: {fileID: 778644436}
   m_Layer: 0
   m_Name: Butterfly (11)
   m_TagString: Untagged
@@ -2755,6 +2852,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &778644436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 778644431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1001 &863628920
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2943,14 +3063,6 @@ PrefabInstance:
     - target: {fileID: 5897260457481753881, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_Name
       value: DialoguePanel
-      objectReference: {fileID: 0}
-    - target: {fileID: 5897260457481753881, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8722710201641264435, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 157
       objectReference: {fileID: 0}
     - target: {fileID: 9067510157106245506, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
       propertyPath: m_Pivot.x
@@ -3172,6 +3284,7 @@ GameObject:
   - component: {fileID: 991731054}
   - component: {fileID: 991731053}
   - component: {fileID: 991731052}
+  - component: {fileID: 991731055}
   m_Layer: 0
   m_Name: Butterfly (10)
   m_TagString: Untagged
@@ -3306,6 +3419,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &991731055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991731050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1 &1019776608
 GameObject:
   m_ObjectHideFlags: 0
@@ -3664,6 +3800,7 @@ GameObject:
   - component: {fileID: 1136464516}
   - component: {fileID: 1136464515}
   - component: {fileID: 1136464514}
+  - component: {fileID: 1136464517}
   m_Layer: 0
   m_Name: Butterfly (9)
   m_TagString: Untagged
@@ -3798,6 +3935,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1136464517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1136464512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1 &1139218004
 GameObject:
   m_ObjectHideFlags: 0
@@ -4031,6 +4191,7 @@ GameObject:
   - component: {fileID: 1180563942}
   - component: {fileID: 1180563941}
   - component: {fileID: 1180563940}
+  - component: {fileID: 1180563943}
   m_Layer: 0
   m_Name: Butterfly (7)
   m_TagString: Untagged
@@ -4165,6 +4326,29 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1180563943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1180563938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1 &1204238450
 GameObject:
   m_ObjectHideFlags: 0
@@ -4177,6 +4361,7 @@ GameObject:
   - component: {fileID: 1204238453}
   - component: {fileID: 1204238452}
   - component: {fileID: 1204238451}
+  - component: {fileID: 1204238455}
   m_Layer: 0
   m_Name: Butterfly (5)
   m_TagString: Untagged
@@ -4311,6 +4496,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 81653074}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &1204238455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1204238450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1 &1221933671
 GameObject:
   m_ObjectHideFlags: 0
@@ -4731,6 +4939,7 @@ GameObject:
   - component: {fileID: 1346948887}
   - component: {fileID: 1346948886}
   - component: {fileID: 1346948885}
+  - component: {fileID: 1346948889}
   m_Layer: 0
   m_Name: Butterfly (1)
   m_TagString: Untagged
@@ -4865,6 +5074,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 81653074}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &1346948889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1346948884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!1 &1411158691
 GameObject:
   m_ObjectHideFlags: 0
@@ -5798,7 +6030,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.6039216, a: 0.32286468}
+  m_Color: {r: 1, g: 0.92156863, b: 0.6039216, a: 0.11210009}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -5817,7 +6049,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -13.05, y: 2.55, z: -1.22}
-  m_LocalScale: {x: 1.0214194, y: 1.0214194, z: 1.0214194}
+  m_LocalScale: {x: 1.1250857, y: 1.1250857, z: 1.1250857}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -6176,7 +6408,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3756835848140584719, guid: e7138b749e1e14cf29dcec8510cc9eda, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3907061094788949330, guid: e7138b749e1e14cf29dcec8510cc9eda, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6389,6 +6621,7 @@ GameObject:
   - component: {fileID: 2034428222}
   - component: {fileID: 2034428221}
   - component: {fileID: 2034428220}
+  - component: {fileID: 2034428224}
   m_Layer: 0
   m_Name: Butterfly
   m_TagString: Untagged
@@ -6523,6 +6756,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 81653074}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &2034428224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2034428219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!114 &2051651184 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8785933954644315146, guid: 93772febf8c1247ef86dd792f04cc9e9, type: 3}
@@ -6625,6 +6881,7 @@ GameObject:
   - component: {fileID: 2140854076}
   - component: {fileID: 2140854075}
   - component: {fileID: 2140854074}
+  - component: {fileID: 2140854078}
   m_Layer: 0
   m_Name: Butterfly (4)
   m_TagString: Untagged
@@ -6759,6 +7016,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 81653074}
   m_LocalEulerAnglesHint: {x: 45, y: 0, z: 0}
+--- !u!114 &2140854078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140854073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34e20ef1ac60e40c484d369727153dc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SpriteCycle
+  frames:
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: ed4533f63b126454983a9ebc1c97c9dd, type: 3}
+  - {fileID: 21300000, guid: 0271e53518bd14a3b8449a2ad61e6fdd, type: 3}
+  - {fileID: 21300000, guid: 3c2490f45ff3a4ebb972ee47605c9a24, type: 3}
+  - {fileID: 21300000, guid: 7a8dc26ded29e4bd1bd2c5f65ab4db50, type: 3}
+  - {fileID: 21300000, guid: 47854d0aab1264236982d5ccc9b9862c, type: 3}
+  frameDuration: 0.08
 --- !u!224 &19249389268213186
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7244,8 +7524,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: tak
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
-  m_sharedMaterial: {fileID: -1093805761633924218, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
+  m_sharedMaterial: {fileID: -1093805761633924218, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7384,8 +7664,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: nie
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
-  m_sharedMaterial: {fileID: -1093805761633924218, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
+  m_sharedMaterial: {fileID: -1093805761633924218, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -7476,8 +7756,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Chcesz ruszy\u0107 dalej?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
-  m_sharedMaterial: {fileID: -1093805761633924218, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
+  m_sharedMaterial: {fileID: -1093805761633924218, guid: d97df054dddcc4800a1fd3e24f307184, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

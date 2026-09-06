@@ -11,9 +11,24 @@ public class EmotionAnimal : MonoBehaviour
     [Header("Диалог этого зверька")]
     public DialogueData dialogue;
 
-    [Header("Спрайты: грустный / спокойный")]
+    [Header("Спрайты: грустный / спокойный (по одному кадру)")]
+    [Tooltip("Используются, только если ниже не заданы кадры анимации")]
     public Sprite sadSprite;
     public Sprite calmSprite;
+
+    [Header("Анимация грусти")]
+    [Tooltip("Кадры перебираются по кругу, пока зверька не выслушали. " +
+             "Пусто — покажется одиночный Sad Sprite.")]
+    public Sprite[] sadFrames;
+    [Tooltip("Кадров в секунду")]
+    public float sadFrameRate = 4f;
+
+    [Header("Анимация радости (после разговора)")]
+    public Sprite[] happyFrames;
+    public float happyFrameRate = 6f;
+
+    [Tooltip("Начинать с произвольного кадра, чтобы зверьки не мигали в такт")]
+    public bool randomStartFrame = true;
 
     [Header("Зона прогулки (мировые X/Z)")]
     public float minX = -10f;
@@ -44,6 +59,12 @@ public class EmotionAnimal : MonoBehaviour
     private bool talking;
     private bool atGatherPoint;
 
+    // текущий набор кадров
+    private Sprite[] frames;
+    private float fps;
+    private int frameIndex;
+    private float frameTimer;
+
     void Start()
     {
         sr = GetComponentInChildren<SpriteRenderer>();
@@ -52,18 +73,14 @@ public class EmotionAnimal : MonoBehaviour
         // Квест уже пройден — зверёк сразу спокойный, разговор не нужен
         bool questDone = ProgressManager.Instance != null &&
                          ProgressManager.Instance.quest3Done;
-        if (questDone)
-        {
-            Heard = true;
-            if (sr != null && calmSprite != null) sr.sprite = calmSprite;
-            return;
-        }
+        if (questDone) Heard = true;
 
-        if (sr != null && sadSprite != null) sr.sprite = sadSprite;
+        ApplyMood();
     }
 
     void Update()
     {
+        Animate();
         HandleClick();
 
         if (talking || atGatherPoint) return;
@@ -112,6 +129,57 @@ public class EmotionAnimal : MonoBehaviour
         var s = transform.localScale;
         s.x = Mathf.Abs(s.x) * ((movingLeft == spriteFacesLeft) ? 1f : -1f);
         transform.localScale = s;
+    }
+
+    // ---------- Анимация кадрами ----------
+
+    // Переключает набор кадров под текущее настроение зверька
+    private void ApplyMood()
+    {
+        frames = Heard ? happyFrames : sadFrames;
+        fps = Heard ? happyFrameRate : sadFrameRate;
+
+        frameTimer = 0f;
+        frameIndex = (randomStartFrame && HasFrames() && frames.Length > 1)
+            ? Random.Range(0, frames.Length)
+            : 0;
+
+        if (HasFrames())
+        {
+            ShowFrame();
+            return;
+        }
+
+        // Кадров нет — остаётся старое поведение с одиночным спрайтом
+        if (sr == null) return;
+        Sprite single = Heard ? calmSprite : sadSprite;
+        if (single != null) sr.sprite = single;
+    }
+
+    private bool HasFrames() =>
+        frames != null && frames.Length > 0 && frames[0] != null;
+
+    private void ShowFrame()
+    {
+        if (sr == null || !HasFrames()) return;
+        var s = frames[Mathf.Clamp(frameIndex, 0, frames.Length - 1)];
+        if (s != null) sr.sprite = s;
+    }
+
+    private void Animate()
+    {
+        if (!HasFrames() || frames.Length < 2) return;
+
+        float step = 1f / Mathf.Max(fps, 0.01f);
+        frameTimer += Time.deltaTime;
+
+        while (frameTimer >= step)
+        {
+            frameTimer -= step;
+            frameIndex = (frameIndex + 1) % frames.Length;
+        }
+
+        ShowFrame();
     }
 
     // Короткий радостный подскок на месте
@@ -168,7 +236,7 @@ public class EmotionAnimal : MonoBehaviour
         talking = false;
         Heard = true;
 
-        if (sr != null && calmSprite != null) sr.sprite = calmSprite;
+        ApplyMood();                 // переключаемся на радостные кадры
         if (comfortParticles != null) comfortParticles.Play();
         if (happyHop) StartCoroutine(HappyHop());
         AudioManager.PlaySfx("bunny_transform");

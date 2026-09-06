@@ -18,8 +18,12 @@ public class BirdInteraction : MonoBehaviour
     public DialogueData finalDialogue;       // прощальные слова птицы (один раз)
     public DialogueData finalRepeatDialogue; // короткая фраза после финала
 
-    [Header("Блокировка героя до разговора")]
-    public HeroMovement heroMovement; // герой не сможет ходить, пока не поговорит с птицей
+    [Header("Управление героем")]
+    public HeroMovement heroMovement; // во время любого диалога герой стоит
+
+    [Tooltip("Держать героя на месте, пока он не поговорит с птицей. " +
+             "Выключено — можно свободно гулять с самого начала.")]
+    public bool lockHeroUntilTalked = false;
 
     [Header("Кнопка 'Поговорить'")]
     public GameObject talkPrompt;   // объект-подсказка (дочерний объект птицы)
@@ -42,10 +46,13 @@ public class BirdInteraction : MonoBehaviour
         bool dialogueActive = DialogueManager.Instance != null &&
                               DialogueManager.Instance.IsDialogueActive;
 
-        // Герой стоит на месте, пока не поговорил с птицей,
-        // а также во время любого диалога
+        // Во время любого диалога герой стоит.
+        // Дополнительно его можно запереть до разговора с птицей — если включена галочка.
         if (heroMovement != null)
-            heroMovement.enabled = WasPlayed(dialogueId) && !dialogueActive;
+        {
+            bool talkedIfRequired = !lockHeroUntilTalked || WasPlayed(dialogueId);
+            heroMovement.enabled = talkedIfRequired && !dialogueActive;
+        }
 
         if (talkPrompt == null) return;
 

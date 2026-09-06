@@ -80,6 +80,19 @@ public class ProgressManager : MonoBehaviour
         }
     }
 
+    // Полный сброс при выходе в главное меню: прогресс, имя игрока
+    // и запомненные точки появления. Громкость и язык сохраняются.
+    public static void ResetForNewGame()
+    {
+        ResetProgress();
+
+        PlayerPrefs.DeleteKey("player_name");
+        PlayerPrefs.DeleteKey("game_started");
+        PlayerPrefs.Save();
+
+        HeroSpawn.ClearSaved();
+    }
+
     void Awake()
     {
         if (Instance != null)

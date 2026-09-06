@@ -94,6 +94,8 @@ public class FinalAnimation : MonoBehaviour
 
     public void OnMainMenu()
     {
+        // Игра пройдена до конца — прогресс сбрасывается, как и при выходе через меню
+        ProgressManager.ResetForNewGame();
         SceneTransition.Load(mainMenuScene);
     }
 
