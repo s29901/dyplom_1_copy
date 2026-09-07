@@ -47,6 +47,7 @@ public class SunDrag : MonoBehaviour
     {
         if (dragging)
         {
+            PlayerActivity.Touch();   // подсказкам: игрок ведёт солнце
             if (TryGetMouseOnPlane(out Vector3 p))
             {
                 transform.position = p + grabOffset;

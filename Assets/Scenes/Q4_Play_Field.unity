@@ -475,6 +475,80 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
+--- !u!1 &221344561
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 221344563}
+  - component: {fileID: 221344562}
+  m_Layer: 0
+  m_Name: Instr_Butterflies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &221344562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221344561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a90db8c07276541e9b04a03d0cb5aa39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InstructionOverlay
+  clip: {fileID: 32900000, guid: ed87ce99f97b340dd91cd00c42068394, type: 3}
+  playWhen: 4
+  delay: 3.5
+  repeatCount: 3
+  playAfter: {fileID: 0}
+  idleSeconds: 5
+  waitForCutsceneFirst: 1
+  idleCountsFrom: 0
+  watchMovementOf: {fileID: 81653074}
+  minQuestsCompleted: 3
+  maxQuestsCompleted: 3
+  birdDialogueId: hub_bird_intro
+  onlyBeforeBirdTalk: 0
+  onlyOncePerPlaythrough: 0
+  id: 3
+  placement: 1
+  sizePercent: 0.4
+  margin: {x: 80, y: 80}
+  showBackdrop: 1
+  backdropSprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
+  backdropColor: {r: 1, g: 0.96, b: 0.82, a: 0.35}
+  backdropPadding: 150
+  backdropPulse: 0
+  pulseSpeed: 1.2
+  pulseStrength: 0.3
+  pauseGame: 0
+  clickToSkip: 1
+  dimBackground: 0
+  fadeDuration: 0
+  playAudio: 0
+--- !u!4 &221344563
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221344561}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 263.00797, y: -0.00007, z: 567.9748}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &354096675
 GameObject:
   m_ObjectHideFlags: 0
@@ -6030,7 +6104,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.6039216, a: 0.11210009}
+  m_Color: {r: 1, g: 0.92156863, b: 0.6039216, a: 0.21127643}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6049,7 +6123,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -13.05, y: 2.55, z: -1.22}
-  m_LocalScale: {x: 1.1250857, y: 1.1250857, z: 1.1250857}
+  m_LocalScale: {x: 1.167501, y: 1.167501, z: 1.167501}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -7939,3 +8013,4 @@ SceneRoots:
   - {fileID: 1794660526}
   - {fileID: 693874760}
   - {fileID: 1221933673}
+  - {fileID: 221344563}

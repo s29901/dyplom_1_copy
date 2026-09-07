@@ -53,11 +53,21 @@ public class PortalTrigger : MonoBehaviour
         }
     }
 
+    // Есть ли в этой сцене та самая птица. В квестовых сценах её нет,
+    // и обратный портал в хаб не должен ничего требовать — иначе при
+    // запуске сцены напрямую из редактора вернуться будет нельзя.
+    private bool birdInScene;
+
+    private void Start()
+    {
+        birdInScene = FindFirstObjectByType<BirdInteraction>(FindObjectsInactive.Include) != null;
+    }
+
     // Разговор помечается пройденным уже при открытии панели,
     // поэтому пока диалог на экране портал всё ещё считается закрытым
     private bool BirdTalked()
     {
-        if (!requireBirdTalk) return true;
+        if (!requireBirdTalk || !birdInScene) return true;
         if (!BirdInteraction.WasPlayed(birdDialogueId)) return false;
 
         var dm = DialogueManager.Instance;

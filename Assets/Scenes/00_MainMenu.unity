@@ -177,7 +177,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "Promotor g\u0142\xF3wny dr hab. Piotr Nowi\u0144ski\nPromotor techniczny
-    mgr in\u017C. Rafa\u0142 Mas\u0142yk\nPromotor pracy pisemnej dr Adam Trwoga\nPromotor
+    mgr in\u017C. Rafa\u0142 Mas\u0142yk\nPromotor pracy pisemnej mrg Adam Trwoga\nPromotor
     pomocniczy mgr Monika Madrak "
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f37f3d5ffa27b4fada1d8c1173f2c7de, type: 2}

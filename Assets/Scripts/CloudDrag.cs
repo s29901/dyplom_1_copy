@@ -92,7 +92,10 @@ public class CloudDrag : MonoBehaviour
         if (isDone) return;
 
         if (isDragging)
+        {
+            PlayerActivity.Touch();   // держим — значит игрок занят делом
             HandleDrag();
+        }
         else if (!isReturning)
             HandlePatrol();
     }
@@ -206,7 +209,10 @@ public class CloudDrag : MonoBehaviour
     void OnMouseDown()
     {
         if (!isDone && !isReturning)
+        {
             isDragging = true;
+            PlayerActivity.Touch();   // подсказкам: игрок взялся за облако
+        }
     }
 
     void CompleteRain()

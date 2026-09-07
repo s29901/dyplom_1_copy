@@ -91,6 +91,8 @@ public class ProgressManager : MonoBehaviour
         PlayerPrefs.Save();
 
         HeroSpawn.ClearSaved();
+        InstructionOverlay.ForgetShown();   // подсказки покажутся заново
+        PlayerActivity.Reset();
     }
 
     void Awake()
