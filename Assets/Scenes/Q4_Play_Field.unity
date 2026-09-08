@@ -507,9 +507,9 @@ MonoBehaviour:
   clip: {fileID: 32900000, guid: ed87ce99f97b340dd91cd00c42068394, type: 3}
   playWhen: 4
   delay: 3.5
-  repeatCount: 3
+  repeatCount: 2
   playAfter: {fileID: 0}
-  idleSeconds: 5
+  idleSeconds: 7
   waitForCutsceneFirst: 1
   idleCountsFrom: 0
   watchMovementOf: {fileID: 81653074}
@@ -6104,7 +6104,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.6039216, a: 0.21127643}
+  m_Color: {r: 1, g: 0.92156863, b: 0.6039216, a: 0.28182164}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6123,7 +6123,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: -13.05, y: 2.55, z: -1.22}
-  m_LocalScale: {x: 1.167501, y: 1.167501, z: 1.167501}
+  m_LocalScale: {x: 1.219051, y: 1.219051, z: 1.219051}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
