@@ -3062,7 +3062,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1047780772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3286,7 +3286,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 4
+    OrthographicSize: 13.06
     NearClipPlane: 0.3
     FarClipPlane: 100
     Dutch: 0
@@ -3713,7 +3713,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3756835848140584719, guid: e7138b749e1e14cf29dcec8510cc9eda, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3907061094788949330, guid: e7138b749e1e14cf29dcec8510cc9eda, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6427,7 +6427,7 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.6187756}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.56489795}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7610,7 +7610,7 @@ Camera:
   far clip plane: 100
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 13.06
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8977,10 +8977,22 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1276477540963067799, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1646431479775525464, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7698828750450746790, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
       propertyPath: m_Name
       value: GrowingTree
       objectReference: {fileID: 0}
+    - target: {fileID: 7707104795539831127, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e04ca2cfb44343f6a8f0c56d9d6c531, type: 3}
     - target: {fileID: 7948713443373760169, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 13.83

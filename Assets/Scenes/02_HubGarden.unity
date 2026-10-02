@@ -149,7 +149,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6916144237057145420, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 21.36
+      value: 16.54
       objectReference: {fileID: 0}
     - target: {fileID: 6916144237057145420, guid: 2b918c91a6e974dfbb9b273896eb38f3, type: 3}
       propertyPath: m_LocalRotation.w
@@ -206,7 +206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &32693104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,7 +452,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &75125451
 Animator:
   serializedVersion: 7
@@ -4768,7 +4768,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3756835848140584719, guid: e7138b749e1e14cf29dcec8510cc9eda, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4919433240066921317, guid: e7138b749e1e14cf29dcec8510cc9eda, type: 3}
       propertyPath: m_Pivot.x
@@ -5705,7 +5705,7 @@ MonoBehaviour:
     CustomLookAtTarget: 0
   Lens:
     FieldOfView: 60
-    OrthographicSize: 5
+    OrthographicSize: 13.46
     NearClipPlane: 0.3
     FarClipPlane: 124.3
     Dutch: 0
@@ -5732,7 +5732,7 @@ Transform:
   m_GameObject: {fileID: 1184888480}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 20.279999, y: 61.8, z: -34.84}
+  m_LocalPosition: {x: 20.279999, y: 61.8, z: -39.66}
   m_LocalScale: {x: 1, y: 1, z: 1.0177}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6149,7 +6149,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.48101175}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.52187765}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7141,7 +7141,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.5892295}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.79668534}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -7709,7 +7709,7 @@ RectTransform:
   m_GameObject: {fileID: 1623471926}
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.11067863, y: 0.11067863, z: 0.11067863}
+  m_LocalScale: {x: 0.16663054, y: 0.16663054, z: 0.16663054}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1859185052}
@@ -7753,7 +7753,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 0.5176471, a: 0.79411113}
+  m_Color: {r: 1, g: 1, b: 0.5176471, a: 0.9565104}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -7842,7 +7842,7 @@ Camera:
   far clip plane: 124.3
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 13.46
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -7867,7 +7867,7 @@ Transform:
   m_GameObject: {fileID: 1649968549}
   serializedVersion: 2
   m_LocalRotation: {x: 0.38268343, y: 0, z: 0, w: 0.92387956}
-  m_LocalPosition: {x: 20.279999, y: 58.564644, z: -34.84}
+  m_LocalPosition: {x: 20.279999, y: 58.564644, z: -38.297646}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9619,7 +9619,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.3770001}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.5438729}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -9753,7 +9753,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 2ca3807d70e24015a65834ec049f2cfb, type: 3}
-  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.32316777}
+  m_Color: {r: 1, g: 0.92156863, b: 0.015686275, a: 0.80330867}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10904,9 +10904,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1646431479775525464, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5910869059782873992, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7698828750450746790, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
       propertyPath: m_Name
       value: tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 7698828750450746790, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7948713443373760169, guid: c29d549b012e04c1c80b2f7c5136eca0, type: 3}
       propertyPath: m_LocalPosition.x
